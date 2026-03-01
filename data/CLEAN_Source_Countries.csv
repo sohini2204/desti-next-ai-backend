@@ -1,0 +1,251 @@
+country_id,country,arrivals_m,avg_stay,purpose,peak_month
+1,Bangladesh,2.051165772918624,20,Education,November
+2,Bangladesh - Market 1,1.350961917964802,23,Business,November
+3,Bangladesh - Market 2,0.1181508999475411,17,Leisure,December
+4,Bangladesh - Market 3,2.391184072079938,6,Business,March
+5,Bangladesh - Market 4,0.244641736694946,23,Leisure,June
+6,USA,0.5669399756447223,16,Leisure,April
+7,USA - Market 1,0.716263762529219,22,Diaspora,November
+8,USA - Market 2,2.331054105812774,5,Education,October
+9,USA - Market 3,1.564801079946204,20,Diaspora,January
+10,USA - Market 4,2.444140572790189,13,Business,December
+11,UK,0.5354520344695046,15,Business,July
+12,UK - Market 1,0.8086678941287442,19,Diaspora,October
+13,UK - Market 2,2.302605974011306,22,Education,June
+14,UK - Market 3,2.034382119460379,3,Education,August
+15,UK - Market 4,1.363598065969075,17,Business,July
+16,Australia,1.631164493903914,23,Diaspora,December
+17,Australia - Market 1,0.6473914526774379,11,Business,October
+18,Australia - Market 2,0.5194562627857052,12,Education,August
+19,Australia - Market 3,0.9482113103265234,7,Education,February
+20,Australia - Market 4,1.856699362205523,6,Education,July
+21,Canada,1.702119758299529,20,Business,April
+22,Canada - Market 1,0.4592895230966986,20,Leisure,January
+23,Canada - Market 2,1.868496987866037,4,Leisure,July
+24,Canada - Market 3,1.384859444422386,24,Education,May
+25,Canada - Market 4,1.640731601063838,9,Education,November
+26,Sri Lanka,0.6566730306783409,16,Leisure,September
+27,Sri Lanka - Market 1,1.292240461262007,4,Education,March
+28,Sri Lanka - Market 2,1.53291260054966,20,Business,October
+29,Sri Lanka - Market 3,1.127679075821475,9,Leisure,January
+30,Sri Lanka - Market 4,0.1379706202373979,16,Business,April
+31,Malaysia,1.838413161108979,12,Education,July
+32,Malaysia - Market 1,1.954294545878518,6,Education,May
+33,Malaysia - Market 2,2.246058099193884,5,Leisure,August
+34,Malaysia - Market 3,0.9806945900915216,8,Leisure,July
+35,Malaysia - Market 4,0.2666172225906241,19,Education,February
+36,Germany,1.707046278721509,14,Business,May
+37,Germany - Market 1,0.7507538476004435,10,Diaspora,March
+38,Germany - Market 2,1.379098687723205,5,Diaspora,June
+39,Germany - Market 3,0.2256133018876199,14,Diaspora,June
+40,Germany - Market 4,1.43868020168806,4,Business,April
+41,Nepal,0.2443416222418845,14,Diaspora,April
+42,Nepal - Market 1,2.407997766291551,17,Leisure,July
+43,Nepal - Market 2,1.385986442735395,18,Education,January
+44,Nepal - Market 3,0.8220474600478122,10,Education,March
+45,Nepal - Market 4,2.325226766750686,15,Business,December
+46,France,2.437995108707237,24,Leisure,April
+47,France - Market 1,2.324802323018309,14,Leisure,September
+48,France - Market 2,1.71174026467129,22,Diaspora,June
+49,France - Market 3,0.3138986370784399,9,Education,January
+50,France - Market 4,1.560367390383499,14,Diaspora,April
+51,Japan,1.800987274583143,16,Education,January
+52,Japan - Market 1,0.645657520230637,15,Diaspora,September
+53,Japan - Market 2,0.3103425922332125,11,Leisure,November
+54,Japan - Market 3,2.080686659758952,6,Diaspora,July
+55,Japan - Market 4,0.4882341072450631,24,Business,June
+56,China,1.459780869211405,22,Diaspora,December
+57,China - Market 1,2.333428515145399,12,Diaspora,February
+58,China - Market 2,1.607080126654326,12,Diaspora,June
+59,China - Market 3,0.4390673182612139,9,Education,September
+60,China - Market 4,0.8740671468313964,5,Diaspora,November
+61,South Korea,1.767882613365908,20,Diaspora,April
+62,South Korea - Market 1,1.475299429434038,12,Leisure,February
+63,South Korea - Market 2,0.4180592145804363,24,Leisure,April
+64,South Korea - Market 3,1.555290266640101,3,Diaspora,June
+65,South Korea - Market 4,2.090397772339081,22,Business,March
+66,Netherlands,1.056791266653551,15,Leisure,February
+67,Netherlands - Market 1,0.2636135425251845,4,Education,September
+68,Netherlands - Market 2,0.6581232600769122,15,Education,December
+69,Netherlands - Market 3,2.417973186767728,15,Business,April
+70,Netherlands - Market 4,1.154828052718984,8,Education,November
+71,UAE,1.587011091754791,21,Business,March
+72,UAE - Market 1,1.454658617629318,4,Diaspora,September
+73,UAE - Market 2,0.2395931092131419,13,Diaspora,August
+74,UAE - Market 3,0.8136521157684133,21,Leisure,March
+75,UAE - Market 4,0.2791115544089961,16,Business,July
+76,Belgium,1.761187220065917,3,Education,April
+77,Belgium - Market 1,2.492072449247144,19,Leisure,July
+78,Belgium - Market 2,0.6299263114855339,22,Education,December
+79,Belgium - Market 3,2.135238124598563,20,Business,May
+80,Belgium - Market 4,2.22785011657712,5,Business,November
+81,Switzerland,1.093911406069425,16,Business,May
+82,Switzerland - Market 1,1.028989024805514,7,Diaspora,July
+83,Switzerland - Market 2,1.098769595631428,23,Diaspora,June
+84,Switzerland - Market 3,0.7235517009880821,12,Business,October
+85,Switzerland - Market 4,0.5552676356192252,7,Leisure,May
+86,Spain,2.102328078291442,15,Leisure,May
+87,Spain - Market 1,2.023689068519175,15,Education,April
+88,Spain - Market 2,0.9913805623603378,19,Education,November
+89,Spain - Market 3,1.190505602943906,22,Education,July
+90,Spain - Market 4,0.4581706670804226,6,Diaspora,April
+91,Thailand,0.6843471241716813,20,Education,March
+92,Thailand - Market 1,1.002131884349846,22,Leisure,June
+93,Thailand - Market 2,1.041744931668339,12,Leisure,January
+94,Thailand - Market 3,2.392803247609428,19,Education,September
+95,Thailand - Market 4,2.362794739391828,4,Education,January
+96,Italy,2.118091790622214,10,Leisure,December
+97,Italy - Market 1,1.629283544339873,4,Education,November
+98,Italy - Market 2,1.180298637807423,19,Business,January
+99,Italy - Market 3,0.2599648973456559,15,Business,May
+100,Italy - Market 4,1.869841044931565,3,Business,May
+101,Austria,0.2147939689458531,10,Leisure,July
+102,Austria - Market 1,1.819176131350438,15,Business,August
+103,Austria - Market 2,0.3528820814867343,19,Leisure,April
+104,Austria - Market 3,1.870020062701617,16,Education,November
+105,Austria - Market 4,2.429799898409609,21,Business,March
+106,Sweden,0.544469362881923,13,Diaspora,May
+107,Sweden - Market 1,1.419078504925419,24,Education,August
+108,Sweden - Market 2,0.7361114279800096,8,Business,December
+109,Sweden - Market 3,2.257361977614965,10,Education,August
+110,Sweden - Market 4,1.599192565250233,4,Business,February
+111,Norway,0.1250264785537674,6,Diaspora,April
+112,Norway - Market 1,1.959121073530691,11,Leisure,October
+113,Norway - Market 2,1.247812706982217,20,Diaspora,May
+114,Norway - Market 3,0.4005605690387851,10,Diaspora,June
+115,Norway - Market 4,1.266437207146096,18,Education,December
+116,Denmark,0.4759322487371399,12,Business,January
+117,Denmark - Market 1,2.327400736782519,11,Leisure,August
+118,Denmark - Market 2,1.13698451906607,20,Diaspora,April
+119,Denmark - Market 3,0.6776625083980119,23,Education,March
+120,Denmark - Market 4,2.228619760502247,23,Business,October
+121,Poland,2.058272653524681,9,Leisure,December
+122,Poland - Market 1,2.305423680734931,20,Leisure,May
+123,Poland - Market 2,2.44815346912143,16,Education,July
+124,Poland - Market 3,0.5334270356207221,13,Education,June
+125,Poland - Market 4,1.907649606192167,24,Education,February
+126,Czech Republic,0.3590649151515144,23,Business,April
+127,Czech Republic - Market 1,2.062684791656668,17,Business,July
+128,Czech Republic - Market 2,2.11768726722688,15,Diaspora,November
+129,Czech Republic - Market 3,1.91964402658369,3,Education,March
+130,Czech Republic - Market 4,0.8141162831651694,21,Business,July
+131,Hungary,1.48521467989012,7,Business,August
+132,Hungary - Market 1,1.207737938607496,18,Education,January
+133,Hungary - Market 2,1.880108947631032,5,Leisure,April
+134,Hungary - Market 3,0.3380274390093182,12,Diaspora,November
+135,Hungary - Market 4,0.84622943201813,23,Education,July
+136,Greece,1.575947776818718,4,Leisure,September
+137,Greece - Market 1,1.43014363391684,24,Diaspora,October
+138,Greece - Market 2,2.115913552677238,14,Leisure,September
+139,Greece - Market 3,2.399376352286513,22,Business,March
+140,Greece - Market 4,2.120728891592101,8,Education,March
+141,Portugal,2.491202410305394,6,Business,April
+142,Portugal - Market 1,1.832970251686569,24,Business,October
+143,Portugal - Market 2,1.03966167562679,23,Diaspora,August
+144,Portugal - Market 3,0.5280942023375916,12,Diaspora,April
+145,Portugal - Market 4,0.5351662718212126,15,Education,January
+146,Ireland,1.511685440676137,6,Leisure,March
+147,Ireland - Market 1,0.255648626759124,18,Diaspora,July
+148,Ireland - Market 2,1.787064258348824,4,Diaspora,February
+149,Ireland - Market 3,1.545149545725955,21,Leisure,March
+150,Ireland - Market 4,0.2405222301855501,15,Education,October
+151,Finland,1.798434243378198,6,Education,March
+152,Finland - Market 1,1.156477595093177,6,Diaspora,July
+153,Finland - Market 2,1.86521345557009,3,Diaspora,April
+154,Finland - Market 3,0.2501013445536843,17,Business,September
+155,Finland - Market 4,2.339471995224538,15,Leisure,January
+156,Russia,1.630127834728551,22,Education,November
+157,Russia - Market 1,1.746187050519673,17,Diaspora,December
+158,Russia - Market 2,1.021199084639306,11,Diaspora,May
+159,Russia - Market 3,0.5427430075207345,12,Diaspora,March
+160,Russia - Market 4,0.1628721004769555,19,Diaspora,June
+161,Singapore,0.7553699439347498,19,Business,March
+162,Singapore - Market 1,2.357630188276817,12,Business,October
+163,Singapore - Market 2,2.194552601163045,7,Education,January
+164,Singapore - Market 3,1.144432958212856,7,Education,June
+165,Singapore - Market 4,1.614809550296095,9,Business,February
+166,Indonesia,2.282536460820151,6,Diaspora,September
+167,Indonesia - Market 1,0.4813796024064485,14,Education,September
+168,Indonesia - Market 2,1.90330020646971,6,Leisure,August
+169,Indonesia - Market 3,0.2369313307630104,24,Education,July
+170,Indonesia - Market 4,0.6927491177727996,16,Education,October
+171,Philippines,0.7526793427087144,24,Business,October
+172,Philippines - Market 1,2.127494647086452,8,Education,September
+173,Philippines - Market 2,1.270170864816122,13,Education,February
+174,Philippines - Market 3,2.275449888026586,23,Education,February
+175,Philippines - Market 4,1.086629446241696,9,Diaspora,February
+176,Vietnam,1.857876956411415,13,Education,August
+177,Vietnam - Market 1,1.444403640308421,9,Leisure,October
+178,Vietnam - Market 2,2.086884100773215,16,Leisure,May
+179,Vietnam - Market 3,2.455113017193392,20,Leisure,March
+180,Vietnam - Market 4,1.840373746122675,7,Education,January
+181,Cambodia,1.213437968052007,23,Education,December
+182,Cambodia - Market 1,0.9388152930083652,11,Leisure,February
+183,Cambodia - Market 2,1.828019295191472,12,Leisure,July
+184,Cambodia - Market 3,1.741009853384902,3,Leisure,August
+185,Cambodia - Market 4,0.3754452924861219,4,Education,October
+186,Myanmar,1.402109928149015,9,Diaspora,January
+187,Myanmar - Market 1,1.404491721622351,8,Diaspora,June
+188,Myanmar - Market 2,2.132604947412544,12,Leisure,May
+189,Myanmar - Market 3,2.369675552800678,18,Leisure,February
+190,Myanmar - Market 4,0.3341500245743194,18,Education,March
+191,Laos,1.66233632116229,24,Education,August
+192,Laos - Market 1,1.988728323802399,8,Education,November
+193,Laos - Market 2,1.202175706232699,21,Business,January
+194,Laos - Market 3,0.5832730771263385,9,Leisure,April
+195,Laos - Market 4,1.407634621802838,6,Diaspora,April
+196,Pakistan,1.34652606280945,10,Leisure,June
+197,Pakistan - Market 1,0.4878875470860915,16,Business,September
+198,Pakistan - Market 2,1.444437420099788,19,Business,February
+199,Pakistan - Market 3,0.2564910190251809,5,Education,December
+200,Pakistan - Market 4,1.392884315086514,22,Business,June
+201,Brazil,0.9926384030004756,20,Business,March
+202,Brazil - Market 1,1.158573179801881,13,Education,December
+203,Brazil - Market 2,1.355991114867379,11,Education,May
+204,Brazil - Market 3,1.622997802120729,11,Business,August
+205,Brazil - Market 4,1.348457255803731,22,Diaspora,December
+206,Mexico,0.498482352198869,18,Business,March
+207,Mexico - Market 1,2.253247218315086,13,Education,June
+208,Mexico - Market 2,0.4377076673170202,3,Business,August
+209,Mexico - Market 3,2.245575304018889,18,Business,May
+210,Mexico - Market 4,1.156776204084038,8,Diaspora,June
+211,New Zealand,2.156497446580226,11,Education,November
+212,New Zealand - Market 1,1.312496256583932,18,Leisure,July
+213,New Zealand - Market 2,0.3938413560614584,15,Diaspora,April
+214,New Zealand - Market 3,2.492987576995988,7,Leisure,March
+215,New Zealand - Market 4,1.365759093094423,22,Diaspora,October
+216,South Africa,0.2905758031432709,7,Business,December
+217,South Africa - Market 1,2.159624927577194,22,Diaspora,February
+218,South Africa - Market 2,0.3657962687654994,14,Leisure,November
+219,South Africa - Market 3,2.263110425859157,14,Education,September
+220,South Africa - Market 4,0.9587158367810602,4,Diaspora,March
+221,Kenya,2.211572593484069,18,Leisure,December
+222,Kenya - Market 1,2.082347710499396,3,Leisure,March
+223,Kenya - Market 2,0.4407327754263853,11,Business,February
+224,Kenya - Market 3,1.897183208711936,18,Education,June
+225,Kenya - Market 4,1.871365896012441,14,Business,November
+226,Egypt,1.621941131909769,22,Leisure,February
+227,Egypt - Market 1,0.8802496370360775,10,Education,December
+228,Egypt - Market 2,1.736006757763888,8,Leisure,April
+229,Egypt - Market 3,0.6452309368564357,10,Business,July
+230,Egypt - Market 4,0.2849872286835057,5,Education,October
+231,Argentina,1.330371407548127,8,Business,May
+232,Argentina - Market 1,0.1796544509498229,23,Leisure,April
+233,Argentina - Market 2,2.351931564276359,14,Leisure,July
+234,Argentina - Market 3,2.037750472815883,15,Business,February
+235,Argentina - Market 4,1.661844514140994,8,Business,November
+236,Chile,1.445057514353056,4,Education,June
+237,Chile - Market 1,0.6441529190164256,23,Education,March
+238,Chile - Market 2,1.090626710238463,16,Business,April
+239,Chile - Market 3,0.143200213468516,10,Education,October
+240,Chile - Market 4,2.418984185696316,24,Education,September
+241,Colombia,0.8013237531085546,21,Business,October
+242,Colombia - Market 1,1.778356900302889,22,Leisure,July
+243,Colombia - Market 2,1.591226793408471,11,Business,December
+244,Colombia - Market 3,2.090547195661232,21,Business,April
+245,Colombia - Market 4,0.3701929369886489,8,Leisure,April
+246,Peru,0.3316827284690579,11,Education,January
+247,Peru - Market 1,1.225043117114814,16,Business,May
+248,Peru - Market 2,0.8133707385006812,16,Diaspora,September
+249,Peru - Market 3,0.2155428063480483,6,Education,August
+250,Peru - Market 4,2.205428230782831,16,Diaspora,September

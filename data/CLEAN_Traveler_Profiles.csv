@@ -1,0 +1,251 @@
+profile_id,persona,budget,duration,interests,best_season
+1,Solo Adventure Seeker,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+2,Family Holiday Planner,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+3,Couple Romantic,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+4,Budget Backpacker,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+5,Luxury Traveler,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+6,History Buff,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+7,Spiritual Pilgrim,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+8,Wildlife Lover,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+9,Beach Lover,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+10,Cultural Explorer,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+11,Business Traveler,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+12,Festival Seeker,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+13,Student Traveler,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+14,Senior Citizen,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+15,Foodie Adventurer,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+16,Solo Adventure Seeker Variant 2,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+17,Family Holiday Planner Variant 2,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+18,Couple Romantic Variant 2,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+19,Budget Backpacker Variant 2,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+20,Luxury Traveler Variant 2,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+21,History Buff Variant 2,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+22,Spiritual Pilgrim Variant 2,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+23,Wildlife Lover Variant 2,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+24,Beach Lover Variant 2,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+25,Cultural Explorer Variant 2,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+26,Business Traveler Variant 2,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+27,Festival Seeker Variant 2,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+28,Student Traveler Variant 2,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+29,Senior Citizen Variant 2,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+30,Foodie Adventurer Variant 2,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+31,Solo Adventure Seeker Variant 3,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+32,Family Holiday Planner Variant 3,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+33,Couple Romantic Variant 3,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+34,Budget Backpacker Variant 3,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+35,Luxury Traveler Variant 3,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+36,History Buff Variant 3,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+37,Spiritual Pilgrim Variant 3,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+38,Wildlife Lover Variant 3,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+39,Beach Lover Variant 3,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+40,Cultural Explorer Variant 3,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+41,Business Traveler Variant 3,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+42,Festival Seeker Variant 3,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+43,Student Traveler Variant 3,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+44,Senior Citizen Variant 3,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+45,Foodie Adventurer Variant 3,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+46,Solo Adventure Seeker Variant 4,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+47,Family Holiday Planner Variant 4,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+48,Couple Romantic Variant 4,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+49,Budget Backpacker Variant 4,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+50,Luxury Traveler Variant 4,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+51,History Buff Variant 4,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+52,Spiritual Pilgrim Variant 4,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+53,Wildlife Lover Variant 4,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+54,Beach Lover Variant 4,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+55,Cultural Explorer Variant 4,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+56,Business Traveler Variant 4,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+57,Festival Seeker Variant 4,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+58,Student Traveler Variant 4,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+59,Senior Citizen Variant 4,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+60,Foodie Adventurer Variant 4,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+61,Solo Adventure Seeker Variant 5,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+62,Family Holiday Planner Variant 5,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+63,Couple Romantic Variant 5,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+64,Budget Backpacker Variant 5,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+65,Luxury Traveler Variant 5,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+66,History Buff Variant 5,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+67,Spiritual Pilgrim Variant 5,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+68,Wildlife Lover Variant 5,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+69,Beach Lover Variant 5,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+70,Cultural Explorer Variant 5,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+71,Business Traveler Variant 5,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+72,Festival Seeker Variant 5,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+73,Student Traveler Variant 5,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+74,Senior Citizen Variant 5,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+75,Foodie Adventurer Variant 5,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+76,Solo Adventure Seeker Variant 6,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+77,Family Holiday Planner Variant 6,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+78,Couple Romantic Variant 6,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+79,Budget Backpacker Variant 6,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+80,Luxury Traveler Variant 6,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+81,History Buff Variant 6,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+82,Spiritual Pilgrim Variant 6,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+83,Wildlife Lover Variant 6,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+84,Beach Lover Variant 6,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+85,Cultural Explorer Variant 6,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+86,Business Traveler Variant 6,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+87,Festival Seeker Variant 6,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+88,Student Traveler Variant 6,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+89,Senior Citizen Variant 6,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+90,Foodie Adventurer Variant 6,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+91,Solo Adventure Seeker Variant 7,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+92,Family Holiday Planner Variant 7,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+93,Couple Romantic Variant 7,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+94,Budget Backpacker Variant 7,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+95,Luxury Traveler Variant 7,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+96,History Buff Variant 7,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+97,Spiritual Pilgrim Variant 7,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+98,Wildlife Lover Variant 7,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+99,Beach Lover Variant 7,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+100,Cultural Explorer Variant 7,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+101,Business Traveler Variant 7,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+102,Festival Seeker Variant 7,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+103,Student Traveler Variant 7,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+104,Senior Citizen Variant 7,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+105,Foodie Adventurer Variant 7,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+106,Solo Adventure Seeker Variant 8,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+107,Family Holiday Planner Variant 8,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+108,Couple Romantic Variant 8,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+109,Budget Backpacker Variant 8,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+110,Luxury Traveler Variant 8,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+111,History Buff Variant 8,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+112,Spiritual Pilgrim Variant 8,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+113,Wildlife Lover Variant 8,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+114,Beach Lover Variant 8,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+115,Cultural Explorer Variant 8,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+116,Business Traveler Variant 8,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+117,Festival Seeker Variant 8,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+118,Student Traveler Variant 8,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+119,Senior Citizen Variant 8,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+120,Foodie Adventurer Variant 8,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+121,Solo Adventure Seeker Variant 9,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+122,Family Holiday Planner Variant 9,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+123,Couple Romantic Variant 9,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+124,Budget Backpacker Variant 9,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+125,Luxury Traveler Variant 9,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+126,History Buff Variant 9,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+127,Spiritual Pilgrim Variant 9,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+128,Wildlife Lover Variant 9,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+129,Beach Lover Variant 9,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+130,Cultural Explorer Variant 9,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+131,Business Traveler Variant 9,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+132,Festival Seeker Variant 9,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+133,Student Traveler Variant 9,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+134,Senior Citizen Variant 9,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+135,Foodie Adventurer Variant 9,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+136,Solo Adventure Seeker Variant 10,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+137,Family Holiday Planner Variant 10,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+138,Couple Romantic Variant 10,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+139,Budget Backpacker Variant 10,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+140,Luxury Traveler Variant 10,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+141,History Buff Variant 10,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+142,Spiritual Pilgrim Variant 10,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+143,Wildlife Lover Variant 10,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+144,Beach Lover Variant 10,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+145,Cultural Explorer Variant 10,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+146,Business Traveler Variant 10,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+147,Festival Seeker Variant 10,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+148,Student Traveler Variant 10,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+149,Senior Citizen Variant 10,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+150,Foodie Adventurer Variant 10,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+151,Solo Adventure Seeker Variant 11,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+152,Family Holiday Planner Variant 11,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+153,Couple Romantic Variant 11,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+154,Budget Backpacker Variant 11,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+155,Luxury Traveler Variant 11,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+156,History Buff Variant 11,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+157,Spiritual Pilgrim Variant 11,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+158,Wildlife Lover Variant 11,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+159,Beach Lover Variant 11,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+160,Cultural Explorer Variant 11,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+161,Business Traveler Variant 11,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+162,Festival Seeker Variant 11,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+163,Student Traveler Variant 11,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+164,Senior Citizen Variant 11,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+165,Foodie Adventurer Variant 11,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+166,Solo Adventure Seeker Variant 12,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+167,Family Holiday Planner Variant 12,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+168,Couple Romantic Variant 12,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+169,Budget Backpacker Variant 12,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+170,Luxury Traveler Variant 12,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+171,History Buff Variant 12,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+172,Spiritual Pilgrim Variant 12,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+173,Wildlife Lover Variant 12,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+174,Beach Lover Variant 12,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+175,Cultural Explorer Variant 12,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+176,Business Traveler Variant 12,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+177,Festival Seeker Variant 12,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+178,Student Traveler Variant 12,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+179,Senior Citizen Variant 12,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+180,Foodie Adventurer Variant 12,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+181,Solo Adventure Seeker Variant 13,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+182,Family Holiday Planner Variant 13,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+183,Couple Romantic Variant 13,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+184,Budget Backpacker Variant 13,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+185,Luxury Traveler Variant 13,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+186,History Buff Variant 13,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+187,Spiritual Pilgrim Variant 13,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+188,Wildlife Lover Variant 13,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+189,Beach Lover Variant 13,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+190,Cultural Explorer Variant 13,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+191,Business Traveler Variant 13,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+192,Festival Seeker Variant 13,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+193,Student Traveler Variant 13,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+194,Senior Citizen Variant 13,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+195,Foodie Adventurer Variant 13,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+196,Solo Adventure Seeker Variant 14,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+197,Family Holiday Planner Variant 14,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+198,Couple Romantic Variant 14,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+199,Budget Backpacker Variant 14,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+200,Luxury Traveler Variant 14,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+201,History Buff Variant 14,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+202,Spiritual Pilgrim Variant 14,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+203,Wildlife Lover Variant 14,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+204,Beach Lover Variant 14,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+205,Cultural Explorer Variant 14,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+206,Business Traveler Variant 14,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+207,Festival Seeker Variant 14,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+208,Student Traveler Variant 14,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+209,Senior Citizen Variant 14,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+210,Foodie Adventurer Variant 14,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+211,Solo Adventure Seeker Variant 15,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+212,Family Holiday Planner Variant 15,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+213,Couple Romantic Variant 15,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+214,Budget Backpacker Variant 15,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+215,Luxury Traveler Variant 15,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+216,History Buff Variant 15,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+217,Spiritual Pilgrim Variant 15,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+218,Wildlife Lover Variant 15,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+219,Beach Lover Variant 15,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+220,Cultural Explorer Variant 15,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+221,Business Traveler Variant 15,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+222,Festival Seeker Variant 15,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+223,Student Traveler Variant 15,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+224,Senior Citizen Variant 15,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+225,Foodie Adventurer Variant 15,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+226,Solo Adventure Seeker Variant 16,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+227,Family Holiday Planner Variant 16,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+228,Couple Romantic Variant 16,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+229,Budget Backpacker Variant 16,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+230,Luxury Traveler Variant 16,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+231,History Buff Variant 16,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+232,Spiritual Pilgrim Variant 16,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+233,Wildlife Lover Variant 16,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+234,Beach Lover Variant 16,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+235,Cultural Explorer Variant 16,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar
+236,Business Traveler Variant 16,$1500-2500,3,"Conferences, Hotels, Connectivity",Jan-Mar
+237,Festival Seeker Variant 16,$800-1500,5,"Local festivals, Celebrations, Photography",Oct-Dec
+238,Student Traveler Variant 16,$400-700,10,"Education, Budget stays, Group tours",Jun-Aug
+239,Senior Citizen Variant 16,$1500-2000,7,"Comfort, Health resorts, Guided tours",Oct-Mar
+240,Foodie Adventurer Variant 16,$1300-1900,6,"Food tours, Cooking classes, Local cuisine",Oct-Mar
+241,Solo Adventure Seeker Variant 17,$800-1200,10,"Trekking, Hiking, Adventure Sports",Oct-Mar
+242,Family Holiday Planner Variant 17,$1500-2500,7,"Family sites, Culture, Entertainment",May-Sep
+243,Couple Romantic Variant 17,$1200-1800,5,"Romantic hotels, Scenic views, Dining",Oct-Mar
+244,Budget Backpacker Variant 17,$500-800,14,"Hostels, Local culture, Street food",Jun-Sep
+245,Luxury Traveler Variant 17,$3000+,10,"5-star hotels, Fine dining, Spa",Oct-Mar
+246,History Buff Variant 17,$1200-1800,8,"Monuments, Museums, Heritage sites",Oct-Mar
+247,Spiritual Pilgrim Variant 17,$800-1200,5,"Temples, Ashrams, Yoga, Meditation",Oct-Mar
+248,Wildlife Lover Variant 17,$1500-2000,10,"Safari, National Parks, Bird watching",Nov-Feb
+249,Beach Lover Variant 17,$1200-1800,7,"Water sports, Resorts, Nightlife",Mar-May
+250,Cultural Explorer Variant 17,$1200-1800,10,"Local interaction, Cooking classes, Crafts",Oct-Mar

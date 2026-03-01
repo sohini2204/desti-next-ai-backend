@@ -1,0 +1,201 @@
+season_id,month,region,foreign_pct,intensity,weather,hotel_occupancy_pct
+1,January,North India,8.89816047538945,Peak,Cool,79
+2,January,South India,10.32797576724562,Peak,Cool,76
+3,January,East India,8.024074561769746,Peak,Cool,71
+4,January,West India,7.632334448672799,Peak,Cool,78
+5,January,Central India,9.804460046972835,Peak,Cool,77
+6,January,Northeast India,7.48233797718321,Peak,Cool,79
+7,January,Coastal,10.72977056320169,Peak,Cool,72
+8,January,Himalayan,8.127299868828402,Peak,Cool,72
+9,January,Desert,8.616968971838151,Peak,Cool,75
+10,January,Plateau,9.127780074568465,Peak,Cool,73
+11,January,Plains,9.84741157888952,Peak,Cool,71
+12,January,Mountain,8.568578594140874,Peak,Cool,73
+13,January,Island,9.224279936868143,Peak,Cool,78
+14,January,Tropical,8.198695128633439,Peak,Cool,75
+15,January,Urban,9.76965827544817,Peak,Cool,70
+16,January,Rural,9.830179407605756,Peak,Cool,71
+17,January,Metropolitan,7.660206371941118,Peak,Cool,79
+18,January,Hill Stations,11.26252813229824,Peak,Cool,78
+19,February,North India,8.618455076693483,Peak,Cool,71
+20,February,South India,10.13693210604863,Peak,Cool,74
+21,February,East India,7.888152939379116,Peak,Cool,75
+22,February,West India,7.537554084460874,Peak,Cool,79
+23,February,Central India,8.435119926400068,Peak,Cool,76
+24,February,Northeast India,8.646844304357645,Peak,Cool,75
+25,February,Coastal,9.58684111737312,Peak,Cool,72
+26,February,Himalayan,11.27833851105823,Peak,Cool,77
+27,February,Desert,11.15799576625676,Peak,Cool,79
+28,February,Plateau,9.79159991524434,Peak,Cool,79
+29,February,Plains,7.753970008207679,Peak,Cool,72
+30,February,Mountain,7.580909155642153,Peak,Cool,73
+31,February,Island,8.954709158757929,Peak,Cool,72
+32,February,Tropical,10.71495003660772,Peak,Cool,73
+33,February,Urban,8.523738038749524,Peak,Cool,75
+34,February,Rural,7.963696899899051,Peak,Cool,78
+35,February,Metropolitan,7.698202574719083,Peak,Cool,80
+36,February,Hill Stations,10.48897907718663,Peak,Cool,72
+37,March,North India,4.822088468494409,Moderate,Moderate,57
+38,March,South India,7.627429375390468,Moderate,Moderate,56
+39,March,East India,7.885081386743783,Moderate,Moderate,50
+40,March,West India,6.23386291417709,Moderate,Moderate,50
+41,March,Central India,8.252413703502373,Moderate,Moderate,55
+42,March,Northeast India,6.123592099410597,Moderate,Moderate,50
+43,March,Coastal,6.043929286862649,Moderate,Moderate,52
+44,March,Himalayan,7.718424713352256,Moderate,Moderate,55
+45,March,Desert,8.348850970305307,Moderate,Moderate,54
+46,March,Plateau,5.278376983753207,Moderate,Moderate,56
+47,March,Plains,7.84314019446759,Moderate,Moderate,55
+48,March,Mountain,7.883868719818244,Moderate,Moderate,54
+49,March,Island,6.890931317527976,Moderate,Moderate,53
+50,March,Tropical,4.901676506976381,Moderate,Moderate,50
+51,March,Urban,4.925716742746937,Moderate,Moderate,55
+52,March,Rural,6.057423924305306,Moderate,Moderate,54
+53,March,Metropolitan,8.430265895704371,Moderate,Moderate,51
+54,March,Hill Stations,6.441531692142519,Moderate,Moderate,56
+55,April,North India,3.41519266196649,Low,Hot,31
+56,April,South India,3.659005811655072,Low,Hot,32
+57,April,East India,6.218790609370292,Low,Hot,39
+58,April,West India,5.033615026041694,Low,Hot,39
+59,April,Central India,5.714688307596457,Low,Hot,32
+60,April,Northeast India,6.070235993959911,Low,Hot,36
+61,April,Coastal,5.729760620656251,Low,Hot,39
+62,April,Himalayan,3.772013899887456,Low,Hot,32
+63,April,Desert,3.411740650167767,Low,Hot,35
+64,April,Plateau,5.772059063689973,Low,Hot,39
+65,April,Plains,2.527808522124763,Low,Hot,36
+66,April,Mountain,4.169644012595116,Low,Hot,33
+67,April,Island,2.979461469334731,Low,Hot,34
+68,April,Tropical,6.271638815650077,Low,Hot,34
+69,April,Urban,4.575162486973465,Low,Hot,38
+70,April,Rural,3.954518409517176,Low,Hot,40
+71,April,Metropolitan,6.349789179768445,Low,Hot,33
+72,April,Hill Stations,4.488994023569542,Low,Hot,34
+73,May,North India,2.339361977509871,Low,Hot,20
+74,May,South India,3.638257335919588,Low,Hot,25
+75,May,East India,1.405915004999958,Low,Hot,23
+76,May,West India,4.833063543866615,Low,Hot,22
+77,May,Central India,1.779579488364893,Low,Hot,25
+78,May,Northeast India,5.142601816442403,Low,Hot,23
+79,May,Coastal,3.888542189623514,Low,Hot,28
+80,May,Himalayan,2.150550175969599,Low,Hot,27
+81,May,Desert,2.671132530877013,Low,Hot,26
+82,May,Plateau,3.734118843043579,Low,Hot,25
+83,May,Plains,1.561159080217633,Low,Hot,28
+84,May,Mountain,2.483120259886944,Low,Hot,22
+85,May,Island,1.363100566219056,Low,Hot,26
+86,May,Tropical,3.91025744736913,Low,Hot,20
+87,May,Urban,3.248372233197124,Low,Hot,22
+88,May,Rural,3.7806911616378,Low,Hot,22
+89,May,Metropolitan,3.963750952409864,Low,Hot,24
+90,May,Hill Stations,4.946919954946939,Low,Hot,21
+91,June,North India,2.164265404201034,Low,Rainy,18
+92,June,South India,4.498774473114251,Low,Rainy,26
+93,June,East India,1.831766510860622,Low,Rainy,23
+94,June,West India,4.068888800804864,Low,Rainy,22
+95,June,Central India,2.918602313424026,Low,Rainy,19
+96,June,Northeast India,1.172411071223597,Low,Rainy,26
+97,June,Coastal,4.401672228653322,Low,Rainy,23
+98,June,Himalayan,2.156119164194803,Low,Rainy,20
+99,June,Desert,3.703822715480957,Low,Rainy,26
+100,June,Plateau,4.348345697060469,Low,Rainy,25
+101,June,Plains,3.368126584617151,Low,Rainy,18
+102,June,Mountain,1.446514856378455,Low,Rainy,26
+103,June,Island,3.22571623863836,Low,Rainy,17
+104,June,Tropical,1.205886171464128,Low,Rainy,24
+105,June,Urban,0.8202463353848746,Low,Rainy,19
+106,June,Rural,2.994935157466344,Low,Rainy,24
+107,June,Metropolitan,3.407845038010402,Low,Rainy,19
+108,June,Hill Stations,3.648716885390143,Low,Rainy,19
+109,July,North India,1.801598792637071,Moderate,Rainy,22
+110,July,South India,3.098531596188859,Moderate,Rainy,23
+111,July,East India,3.130451569201373,Moderate,Rainy,20
+112,July,West India,0.8746990713123699,Moderate,Rainy,18
+113,July,Central India,1.560809470726902,Moderate,Rainy,17
+114,July,Northeast India,4.392042219009783,Moderate,Rainy,18
+115,July,Coastal,4.068186220708453,Moderate,Rainy,21
+116,July,Himalayan,3.679245214166594,Moderate,Rainy,20
+117,July,Desert,2.807615538505436,Moderate,Rainy,19
+118,July,Plateau,1.280971951192178,Moderate,Rainy,22
+119,July,Plains,1.623089449763423,Moderate,Rainy,15
+120,July,Mountain,3.081889183628671,Moderate,Rainy,16
+121,July,Island,4.261834337411657,Moderate,Rainy,24
+122,July,Tropical,4.159457560881794,Moderate,Rainy,18
+123,July,Urban,0.5618264661154697,Moderate,Rainy,24
+124,July,Rural,2.212736593269257,Moderate,Rainy,24
+125,July,Metropolitan,4.354479908357011,Moderate,Rainy,23
+126,July,Hill Stations,1.677795568278343,Moderate,Rainy,18
+127,August,North India,4.504546686067428,Moderate,Rainy,22
+128,August,South India,1.77797098674437,Moderate,Rainy,25
+129,August,East India,4.844619096643124,Moderate,Rainy,26
+130,August,West India,3.38024468035746,Moderate,Rainy,20
+131,August,Central India,3.560028906796679,Moderate,Rainy,29
+132,August,Northeast India,1.660336060946096,Moderate,Rainy,24
+133,August,Coastal,4.609492287711822,Moderate,Rainy,27
+134,August,Himalayan,3.888062963981072,Moderate,Rainy,26
+135,August,Desert,2.537964604879021,Moderate,Rainy,22
+136,August,Plateau,4.337444621914054,Moderate,Rainy,27
+137,August,Plains,4.568289274320415,Moderate,Rainy,28
+138,August,Mountain,3.145369595443751,Moderate,Rainy,24
+139,August,Island,4.2931807158671,Moderate,Rainy,26
+140,August,Tropical,3.907867509030813,Moderate,Rainy,27
+141,August,Urban,4.660021367270265,Moderate,Rainy,23
+142,August,Rural,2.602331810559776,Moderate,Rainy,20
+143,August,Metropolitan,3.413120563984696,Moderate,Rainy,20
+144,August,Hill Stations,2.962392072529841,Moderate,Rainy,25
+145,September,North India,3.346165008513138,Moderate,Moderate,34
+146,September,South India,2.322000999756198,Moderate,Moderate,28
+147,September,East India,5.490402242638633,Moderate,Moderate,32
+148,September,West India,2.708242050607539,Moderate,Moderate,33
+149,September,Central India,5.279974212394444,Moderate,Moderate,30
+150,September,Northeast India,4.691561903276002,Moderate,Moderate,29
+151,September,Coastal,2.406726884674431,Moderate,Moderate,33
+152,September,Himalayan,4.362540486440427,Moderate,Moderate,34
+153,September,Desert,5.104365334890646,Moderate,Moderate,38
+154,September,Plateau,4.265201393204782,Moderate,Moderate,31
+155,September,Plains,5.380744779074815,Moderate,Moderate,31
+156,September,Mountain,3.955885682822545,Moderate,Moderate,29
+157,September,Island,2.30140297366183,Moderate,Moderate,38
+158,September,Tropical,5.543920482048824,Moderate,Moderate,35
+159,September,Urban,3.83581177765708,Moderate,Moderate,30
+160,September,Rural,2.825748170684344,Moderate,Moderate,31
+161,September,Metropolitan,4.396906658824483,Moderate,Moderate,35
+162,September,Hill Stations,4.840789506870925,Moderate,Moderate,31
+163,October,North India,9.319461122652775,High,Moderate,62
+164,October,South India,7.717416210045602,High,Moderate,61
+165,October,East India,7.17840024971116,High,Moderate,57
+166,October,West India,6.923890714605046,High,Moderate,62
+167,October,Central India,5.557573954519023,High,Moderate,56
+168,October,Northeast India,5.684010568087011,High,Moderate,55
+169,October,Coastal,8.92184233604403,High,Moderate,62
+170,October,Himalayan,7.396695316349301,High,Moderate,55
+171,October,Desert,7.466463500467329,High,Moderate,59
+172,October,Plateau,6.192807479640061,High,Moderate,59
+173,October,Plains,7.094018937589494,High,Moderate,61
+174,October,Mountain,8.040374603470575,High,Moderate,55
+175,October,Island,6.998450458505885,High,Moderate,61
+176,October,Tropical,7.51254503432035,High,Moderate,63
+177,October,Urban,8.13477452647578,High,Moderate,56
+178,October,Rural,5.782274989601719,High,Moderate,61
+179,October,Metropolitan,5.606045242166488,High,Moderate,60
+180,October,Hill Stations,9.26092096569983,High,Moderate,60
+181,November,North India,9.452679704826089,High,Cool,80
+182,November,South India,9.733011561966066,High,Cool,79
+183,November,East India,11.6658592351061,High,Cool,78
+184,November,West India,11.74476225529566,High,Cool,83
+185,November,Central India,8.683164539157186,High,Cool,74
+186,November,Northeast India,8.303112005509707,High,Cool,74
+187,November,Coastal,8.277771843023714,High,Cool,81
+188,November,Himalayan,8.184754593840916,High,Cool,77
+189,November,Desert,11.27950124387782,High,Cool,74
+190,November,Plateau,11.15787393035574,High,Cool,77
+191,November,Plains,8.372659310486625,High,Cool,81
+192,November,Mountain,10.41577138711954,High,Cool,82
+193,November,Island,10.84028417521554,High,Cool,82
+194,November,Tropical,9.028138290285227,High,Cool,75
+195,November,Urban,10.90245900656343,High,Cool,82
+196,November,Rural,11.86202056800269,High,Cool,78
+197,November,Metropolitan,9.388072343171132,High,Cool,81
+198,November,Hill Stations,9.263214161012073,High,Cool,83
+199,December,North India,12.93365100737205,Peak,Cool,91
+200,December,South India,12.50348427116599,Peak,Cool,94

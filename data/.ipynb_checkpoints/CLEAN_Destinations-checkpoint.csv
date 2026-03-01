@@ -1,0 +1,146 @@
+dest_id,destination,state,category,domestic_m,foreign_m,rating,budget_usd,days,best_season,visitor_total
+1,Taj Mahal,Uttar Pradesh,Monument,6.1,0.68,4.8,1200-1500,2,Oct-Mar,6.779999999999999
+2,Agra Fort,Uttar Pradesh,Historical,3.89,0.22,4.5,1000-1300,1,Oct-Mar,4.11
+3,Varanasi Temples,Uttar Pradesh,Temple,2.5,0.35,4.6,800-1200,3,Oct-Mar,2.85
+4,Mathura Krishna Temple,Uttar Pradesh,Temple,1.85,0.12,4.4,600-900,1,Oct-Mar,1.97
+5,Fatehpur Sikri,Uttar Pradesh,Historical,1.2,0.18,4.5,800-1000,1,Oct-Mar,1.38
+6,Kashi Vishwanath Temple,Uttar Pradesh,Temple,3.4,0.45,4.7,500-800,2,Oct-Mar,3.85
+7,Lucknow Monuments,Uttar Pradesh,Historical,0.89,0.08,4.2,500-800,1,Oct-Apr,0.97
+8,Ranthambore National Park,Uttar Pradesh,Wildlife,0.45,0.22,4.6,1500-2000,2,Nov-Feb,0.67
+9,Banasur Fort,Uttar Pradesh,Historical,0.34,0.05,4.1,600-900,1,May-Oct,0.39
+10,Nainital Lake,Uttar Pradesh,Nature,0.67,0.08,4.2,900-1200,2,Mar-Jun,0.75
+11,Vrindavan Temples,Uttar Pradesh,Temple,2.12,0.28,4.4,700-1000,2,Oct-Mar,2.4
+12,Etah Wildlife Sanctuary,Uttar Pradesh,Wildlife,0.23,0.04,4.0,800-1200,2,Nov-Feb,0.27
+13,Ayodhya Ram Mandir,Uttar Pradesh,Temple,3.78,0.34,4.8,600-900,1,Oct-Mar,4.12
+14,Meerut City,Uttar Pradesh,Historical,0.45,0.06,3.8,500-700,1,Oct-Mar,0.51
+15,Sarai Akhbarinagar,Uttar Pradesh,Historical,0.22,0.03,3.5,400-600,1,Oct-Apr,0.25
+16,Goa Beaches,Goa,Beach,4.56,0.35,4.5,1000-1300,3,Oct-Apr,4.909999999999999
+17,Calangute Beach,Goa,Beach,4.12,0.32,4.6,1000-1300,3,Oct-Apr,4.44
+18,Anjuna Beach,Goa,Beach,3.89,0.3,4.5,900-1200,3,Oct-Apr,4.19
+19,Palolem Beach,Goa,Beach,3.67,0.29,4.4,800-1100,3,Oct-Apr,3.96
+20,Baga Beach,Goa,Beach,3.45,0.28,4.4,950-1250,3,Oct-Apr,3.73
+21,Fort Aguada,Goa,Historical,0.92,0.15,4.3,500-700,1,Oct-Apr,1.07
+22,Basilica of Bom Jesus,Goa,Religious,1.5,0.22,4.5,400-600,1,Oct-Apr,1.72
+23,Dudhsagar Waterfall,Goa,Nature,0.68,0.12,4.4,1000-1500,1,Jun-Sep,0.8
+24,Mormugao Port,Goa,Historical,0.34,0.08,3.9,500-800,1,Oct-Apr,0.42
+25,Colva Beach,Goa,Beach,2.89,0.23,4.3,900-1200,3,Oct-Apr,3.12
+26,Mandrem Beach,Goa,Beach,1.56,0.18,4.4,800-1100,3,Oct-Apr,1.74
+27,Arambol Beach,Goa,Beach,1.23,0.14,4.2,700-1000,3,Oct-Apr,1.37
+28,Cavelossim Beach,Goa,Beach,0.98,0.11,4.1,800-1000,2,Oct-Apr,1.09
+29,Betul Beach,Goa,Beach,0.67,0.09,4.2,700-900,2,Oct-Apr,0.76
+30,Agonda Beach,Goa,Beach,0.45,0.06,4.0,600-900,2,Oct-Apr,0.51
+31,Benaulim Beach,Goa,Beach,0.89,0.1,4.1,750-1000,2,Oct-Apr,0.99
+32,Querim Beach,Goa,Beach,0.34,0.05,3.9,600-850,2,Oct-Apr,0.39
+33,Morjim Beach,Goa,Beach,0.56,0.07,4.0,650-900,2,Oct-Apr,0.6300000000000001
+34,Keri Beach,Goa,Beach,0.23,0.03,3.8,550-750,1,Oct-Apr,0.26
+35,Velsao Beach,Goa,Beach,0.19,0.02,3.7,500-700,1,Oct-Apr,0.21
+36,Hampi,Karnataka,Historical,1.89,0.22,4.5,800-1100,2,Oct-Mar,2.11
+37,Mysore Palace,Karnataka,Monument,2.34,0.18,4.4,600-900,1,Sep-May,2.52
+38,Coorg Plantations,Karnataka,Nature,1.5,0.12,4.3,1200-1600,2,Sep-Mar,1.62
+39,Jog Falls,Karnataka,Nature,0.95,0.08,4.2,700-1000,1,Jun-Sep,1.03
+40,Bandipur National Park,Karnataka,Wildlife,0.45,0.15,4.5,1000-1500,2,Jun-Oct,0.6
+41,Bangalore Palace,Karnataka,Historical,1.12,0.08,4.1,500-700,1,Sep-May,1.2
+42,Chikmagalur Coffee,Karnataka,Nature,0.78,0.1,4.3,1000-1400,2,Sep-Mar,0.88
+43,Bijapur Fort,Karnataka,Historical,0.56,0.09,4.1,600-900,1,Oct-Mar,0.65
+44,Udupi Temple,Karnataka,Temple,0.67,0.11,4.3,500-800,1,Oct-Mar,0.78
+45,Mangalore Beach,Karnataka,Beach,0.89,0.13,4.2,900-1200,2,Nov-Mar,1.02
+46,Nandi Hills,Karnataka,Nature,1.23,0.09,4.2,800-1100,1,Sep-Mar,1.32
+47,Kaveri River Valley,Karnataka,Nature,0.45,0.06,4.0,900-1300,2,Oct-Mar,0.51
+48,Gokarna Beach,Karnataka,Beach,0.56,0.08,4.2,800-1100,2,Oct-Apr,0.64
+49,Uttara Kannada,Karnataka,Nature,0.34,0.05,4.0,900-1200,2,Oct-Mar,0.39
+50,Shimoga Wildlife,Karnataka,Wildlife,0.23,0.04,3.9,1000-1400,2,Jun-Oct,0.27
+51,Jaipur City Palace,Rajasthan,Monument,2.89,0.34,4.6,1000-1400,2,Oct-Mar,3.23
+52,Hawa Mahal,Rajasthan,Monument,2.45,0.28,4.5,800-1100,1,Oct-Mar,2.73
+53,Lake Palace Udaipur,Rajasthan,Monument,1.78,0.26,4.7,1500-2000,2,Oct-Mar,2.04
+54,Jodhpur Blue City,Rajasthan,Historical,1.34,0.19,4.4,800-1100,2,Oct-Mar,1.53
+55,Jaisalmer Fort,Rajasthan,Historical,0.89,0.16,4.3,700-1000,2,Oct-Mar,1.05
+56,Mount Abu Hill Station,Rajasthan,Nature,0.92,0.08,4.2,900-1200,2,Jun-Sep,1.0
+57,Chittorgarh Fort,Rajasthan,Historical,0.56,0.09,4.1,600-900,1,Oct-Mar,0.65
+58,Desert Safari Rajasthan,Rajasthan,Adventure,0.78,0.14,4.4,1200-1600,3,Oct-Mar,0.92
+59,Pushkar Lake,Rajasthan,Religious,0.67,0.12,4.3,800-1100,2,Oct-Mar,0.79
+60,Gadi Sagar Lake,Rajasthan,Nature,0.34,0.06,4.0,600-900,1,Oct-Mar,0.4
+61,Bundi Palace,Rajasthan,Historical,0.45,0.07,4.1,700-1000,1,Oct-Mar,0.52
+62,Kumbhalgarh Fort,Rajasthan,Historical,0.56,0.1,4.2,800-1100,1,Oct-Mar,0.66
+63,Mehrangarh Fort,Rajasthan,Monument,0.89,0.13,4.3,900-1200,1,Oct-Mar,1.02
+64,Ranakpur Temples,Rajasthan,Temple,0.34,0.08,4.4,700-1000,1,Oct-Mar,0.42
+65,Camel Safari,Rajasthan,Adventure,0.56,0.11,4.2,1000-1400,3,Oct-Mar,0.67
+66,Gateway of India,Maharashtra,Monument,3.89,0.67,4.5,500-800,1,Oct-Apr,4.56
+67,Taj Hotels Mumbai,Maharashtra,Landmark,2.34,0.28,4.4,800-1200,1,Oct-Apr,2.62
+68,Ellora Caves,Maharashtra,Historical,1.05,0.18,4.6,600-900,1,Oct-May,1.23
+69,Ajanta Caves,Maharashtra,Historical,0.87,0.15,4.5,600-900,1,Oct-May,1.02
+70,Lonavala Hill Station,Maharashtra,Nature,1.56,0.09,4.1,800-1200,1,Jun-Sep,1.65
+71,Matheran Train Journey,Maharashtra,Adventure,0.67,0.05,4.3,500-800,1,Sep-Mar,0.7200000000000001
+72,Shirdi Temple,Maharashtra,Temple,1.89,0.34,4.6,700-1000,1,Oct-Mar,2.23
+73,Raigad Fort,Maharashtra,Historical,0.34,0.06,4.1,600-900,1,Oct-Mar,0.4
+74,Khandala Hill Station,Maharashtra,Nature,0.89,0.07,4.0,800-1100,1,Jun-Sep,0.96
+75,Konkan Coast,Maharashtra,Beach,0.56,0.08,4.2,900-1300,2,Oct-Mar,0.64
+76,Pandharpur Temple,Maharashtra,Temple,0.67,0.12,4.4,600-900,1,Jul-Dec,0.79
+77,Lonala Lake,Maharashtra,Nature,0.23,0.03,3.8,700-1000,1,Jun-Sep,0.26
+78,Sinhagarh Fort,Maharashtra,Historical,0.12,0.02,3.7,500-800,1,Oct-Mar,0.14
+79,Mahableshwar,Maharashtra,Nature,0.45,0.06,4.1,1000-1400,2,Jun-Sep,0.51
+80,Panchgani,Maharashtra,Nature,0.34,0.05,3.9,900-1200,2,Jun-Sep,0.39
+81,Meenakshi Temple,Tamil Nadu,Temple,2.15,0.15,4.4,600-900,1,Oct-Mar,2.3
+82,Brihadeeswarar Temple,Tamil Nadu,Temple,1.78,0.12,4.5,500-800,1,Oct-Mar,1.9
+83,Ooty Hill Station,Tamil Nadu,Nature,1.89,0.14,4.3,1000-1400,2,Apr-Jun,2.03
+84,Kodaikanal Lake,Tamil Nadu,Nature,1.34,0.1,4.2,1100-1500,2,Apr-Jun,1.44
+85,Chidambaram Temple,Tamil Nadu,Temple,1.12,0.08,4.3,500-700,1,Oct-Mar,1.2
+86,Marina Beach Chennai,Tamil Nadu,Beach,2.45,0.18,4.0,600-900,1,Oct-Apr,2.63
+87,Tirupati Temple,Tamil Nadu,Temple,2.78,0.22,4.6,700-1000,1,Oct-Mar,3.0
+88,Kanyakumari,Tamil Nadu,Beach,0.56,0.12,4.3,800-1100,1,Oct-Mar,0.68
+89,Mahabalipuram Temple,Tamil Nadu,Historical,0.67,0.14,4.4,700-1000,1,Oct-Mar,0.81
+90,Pondy Auroville,Tamil Nadu,Nature,0.45,0.09,4.2,700-1000,2,Oct-Mar,0.54
+91,Thekkady Wildlife,Tamil Nadu,Wildlife,0.34,0.08,4.3,1200-1700,2,Oct-Mar,0.42
+92,Yercaud Hill Station,Tamil Nadu,Nature,0.23,0.04,3.9,800-1100,2,Jun-Sep,0.27
+93,Udagamandalam,Tamil Nadu,Nature,0.34,0.05,4.1,1000-1400,2,Apr-Jun,0.39
+94,Coonoor Tea Valley,Tamil Nadu,Nature,0.28,0.04,4.0,1000-1400,2,Apr-Jun,0.32
+95,Covelong Beach,Tamil Nadu,Beach,0.12,0.02,3.7,700-900,1,Oct-Mar,0.14
+96,Kerala Backwaters,Kerala,Nature,2.67,0.34,4.6,1200-1600,3,Sep-Mar,3.01
+97,Munnar Tea Gardens,Kerala,Nature,1.89,0.22,4.5,1000-1400,2,Sep-Mar,2.11
+98,Kochi Beaches,Kerala,Beach,1.56,0.28,4.4,900-1300,2,Sep-Mar,1.84
+99,Kumarakom Bird Sanctuary,Kerala,Wildlife,0.78,0.12,4.3,800-1200,2,Oct-Mar,0.9
+100,Athirapally Waterfall,Kerala,Nature,0.56,0.08,4.2,700-1000,1,Jun-Sep,0.64
+101,Thekkali Backwaters,Kerala,Nature,0.34,0.06,4.1,1100-1500,2,Sep-Mar,0.4
+102,Wayanad Wildlife,Kerala,Wildlife,0.45,0.1,4.4,1200-1700,2,Oct-Mar,0.55
+103,Alleppey Houseboat,Kerala,Adventure,0.67,0.15,4.5,1300-1800,3,Sep-Mar,0.8200000000000001
+104,Varkala Beach,Kerala,Beach,0.23,0.05,4.1,800-1100,2,Oct-Mar,0.28
+105,Periyar National Park,Kerala,Wildlife,0.56,0.12,4.4,1100-1600,2,Nov-May,0.68
+106,Kottayam,Kerala,Nature,0.12,0.02,3.8,700-1000,1,Sep-Mar,0.14
+107,Kannur Beach,Kerala,Beach,0.19,0.03,3.9,700-1000,1,Oct-Mar,0.22
+108,Idukki Hills,Kerala,Nature,0.28,0.05,4.0,1000-1400,2,Sep-Mar,0.33
+109,Ashtamudi Lake,Kerala,Nature,0.34,0.06,4.2,1100-1500,2,Sep-Mar,0.4
+110,Bekal Fort,Kerala,Historical,0.15,0.03,3.8,600-900,1,Oct-Mar,0.18
+111,India Gate,Delhi,Monument,3.12,0.2,4.4,500-800,1,Oct-Mar,3.32
+112,Qutub Minar,Delhi,Monument,3.12,0.22,4.3,600-900,1,Oct-Mar,3.34
+113,Red Fort,Delhi,Historical,2.89,0.19,4.4,600-900,1,Oct-Mar,3.08
+114,Humayun Tomb,Delhi,Monument,1.45,0.12,4.3,500-800,1,Oct-Mar,1.57
+115,Jama Masjid,Delhi,Religious,2.34,0.18,4.2,400-600,1,Oct-Mar,2.52
+116,Chandni Chowk Market,Delhi,Shopping,1.89,0.15,4.1,300-600,1,Oct-Apr,2.04
+117,Raj Ghat,Delhi,Historical,1.12,0.1,4.2,400-600,1,Oct-Mar,1.22
+118,Laxmi Narayan Temple,Delhi,Temple,0.89,0.08,4.3,500-700,1,Oct-Mar,0.97
+119,Akshardham Temple,Delhi,Temple,1.23,0.14,4.5,600-900,2,Oct-Mar,1.37
+120,National Museum,Delhi,Museum,0.56,0.09,4.2,500-800,2,Oct-Mar,0.65
+121,Rashtrapati Bhavan,Delhi,Monument,0.34,0.05,4.1,600-900,1,Oct-Mar,0.39
+122,Purana Qila,Delhi,Historical,0.45,0.07,4.0,500-800,1,Oct-Mar,0.52
+123,Lodi Garden,Delhi,Nature,0.23,0.03,3.9,300-600,1,Oct-Apr,0.26
+124,Jantar Mantar,Delhi,Monument,0.34,0.06,4.1,500-800,1,Oct-Mar,0.4
+125,Birla Mandir,Delhi,Temple,0.19,0.03,4.0,400-600,1,Oct-Mar,0.22
+126,Shimla Hill Station,Himachal Pradesh,Nature,1.34,0.15,4.2,1000-1400,2,Mar-Jun,0.9
+127,Manali Adventure,Himachal Pradesh,Adventure,1.67,0.19,4.4,1200-1600,3,Mar-Oct,0.9
+128,Dharamshala Tea Town,Himachal Pradesh,Nature,0.89,0.12,4.3,800-1200,2,Mar-Jun,0.9
+129,Kinnaur Apple Valley,Himachal Pradesh,Nature,0.45,0.06,4.1,900-1300,2,Jun-Oct,0.9
+130,Spiti Valley,Himachal Pradesh,Nature,0.23,0.05,4.0,1000-1400,3,Apr-Oct,0.9
+131,Jim Corbett National Park,Uttarakhand,Wildlife,0.78,0.15,4.5,1200-1800,3,Nov-Feb,0.9
+132,Mussoorie Hill Station,Uttarakhand,Nature,1.12,0.1,4.2,900-1300,2,Mar-Jun,0.9
+133,Rishikesh Yoga Capital,Uttarakhand,Spiritual,1.45,0.18,4.3,800-1200,3,Sep-Mar,0.9
+134,Haridwar Pilgrimage,Uttarakhand,Religious,2.78,0.22,4.4,600-1000,2,Oct-Mar,0.9
+135,Nainital Lake,Uttarakhand,Nature,0.67,0.08,4.2,900-1200,2,Mar-Jun,0.9
+136,Darjeeling Tea Gardens,West Bengal,Nature,1.34,0.17,4.4,1000-1400,2,Mar-May,0.9
+137,Kolkata Victoria Memorial,West Bengal,Monument,1.89,0.14,4.3,600-900,1,Oct-Mar,0.9
+138,Sundarbans Tiger Reserve,West Bengal,Wildlife,0.56,0.1,4.4,1500-2000,3,Oct-Feb,0.9
+139,Darjeeling Toy Train,West Bengal,Adventure,0.89,0.12,4.5,800-1200,2,Mar-May,0.9
+140,Jalpaiguri Tea Gardens,West Bengal,Nature,0.34,0.05,4.0,900-1300,2,Mar-May,0.9
+141,Tirupati Temple,Andhra Pradesh,Temple,4.56,0.08,4.5,600-900,1,Oct-Mar,0.9
+142,Nagarjuna Konda,Andhra Pradesh,Historical,0.34,0.05,4.1,500-800,1,Oct-Mar,0.9
+143,Hyderabad Charminar,Andhra Pradesh,Monument,1.78,0.12,4.2,600-900,1,Oct-Mar,0.9
+144,Visakhapatnam Beach,Andhra Pradesh,Beach,0.67,0.09,4.1,800-1100,2,Nov-Mar,0.9
+145,Araku Valley,Andhra Pradesh,Nature,0.23,0.04,4.0,1000-1400,2,Jun-Sep,0.9
