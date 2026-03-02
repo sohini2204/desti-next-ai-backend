@@ -1,11 +1,6 @@
 fastapi
 uvicorn
-transformers
-torch
-sentencepiece
-pandas
-plotly
-scikit-learn
-faiss-cpu
-langchain
 openai
+python-dotenv
+numpy
+pydantic
