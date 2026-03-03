@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from content_engine import (
@@ -14,6 +15,20 @@ from multilingual_engine import translate_text
 from dashboard import revenue_chart, seasonal_chart
 
 app = FastAPI()
+
+# =============================
+# CORS CONFIGURATION (IMPORTANT)
+# =============================
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://desti-next-ai.vercel.app",  # your frontend
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # =============================
 # Request Models
@@ -70,3 +85,5 @@ def chat(data: TextRequest):
 @app.post("/translate")
 def translate(data: TextRequest):
     return {"result": translate_text(data.text)}
+
+
