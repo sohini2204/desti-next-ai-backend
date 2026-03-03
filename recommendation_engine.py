@@ -1,18 +1,19 @@
-import pandas as pd
-from sklearn.neighbors import NearestNeighbors
-from embedding_engine import generate_embeddings
+from openai import OpenAI
+import os
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def recommend_destination(user_interest):
-    df = pd.read_csv("data/CLEAN_Destinations.csv")
 
-    df["combined"] = df["category"] + " " + df["description"]
+    prompt = f"""
+    A user is interested in: {user_interest}.
+    Recommend 5 travel destinations.
+    Return them as a simple list with destination name and category.
+    """
 
-    embeddings = generate_embeddings(df["combined"].tolist())
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
 
-    knn = NearestNeighbors(n_neighbors=5, metric="cosine")
-    knn.fit(embeddings)
-
-    user_embedding = generate_embeddings([user_interest])
-    distances, indices = knn.kneighbors(user_embedding)
-
-    return df.iloc[indices[0]][["destination_name", "category"]]
+    return response.choices[0].message.content
