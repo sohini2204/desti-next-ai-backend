@@ -1,22 +1,12 @@
-from openai import OpenAI
-import os
+from hf_client import query_hf_model
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+API_URL = "https://api-inference.huggingface.co/models/distilbert-base-uncased-finetuned-sst-2-english"
 
 def analyze_sentiment(text):
-
-    prompt = f"""
-    Analyze the sentiment of this travel review.
-    Classify as Positive, Negative, or Neutral.
-    Also give a short explanation.
-
-    Review:
-    {text}
     """
-
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}]
-    )
-
-    return response.choices[0].message.content
+    Analyze sentiment of a travel review.
+    Returns a classification like 'POSITIVE' or 'NEGATIVE'.
+    """
+    result = query_hf_model(API_URL, {"inputs": text})
+    return result
+  
