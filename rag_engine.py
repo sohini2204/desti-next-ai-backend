@@ -1,22 +1,12 @@
-from openai import OpenAI
-import os
+from hf_client import query_hf_model
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# HuggingFace text generation model
+API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 
-def rag_chatbot(query, k=3):
-
-    prompt = f"""
-    You are an intelligent tourism assistant.
-
-    A user asked: {query}
-
-    Provide a helpful, clear, and tourism-focused answer.
-    If relevant, suggest destinations, tips, or travel insights.
+def rag_chatbot(query):
     """
-
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}]
-    )
-
-    return response.choices[0].message.content
+    RAG-style chatbot response for travel questions using HF model.
+    """
+    prompt = f"Answer this travel question clearly and professionally:\n\n{query}"
+    result = query_hf_model(API_URL, {"inputs": prompt})
+    return result[0]["generated_text"]
