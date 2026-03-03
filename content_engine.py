@@ -1,20 +1,42 @@
-from transformers import pipeline
+from openai import OpenAI
+import os
 
-generator = pipeline("text-generation", model="gpt2")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def generate_travel_story(destination):
     prompt = f"Write an engaging travel story about {destination} highlighting culture, food, and experiences."
-    result = generator(prompt, max_length=300, temperature=0.9)
-    return result[0]["generated_text"]
+    
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.9,
+        max_tokens=400
+    )
+    
+    return response.choices[0].message.content
 
 
 def generate_promotional_content(destination):
     prompt = f"Write a tourism marketing blog for {destination} with attractions, best time to visit and tips."
-    result = generator(prompt, max_length=350)
-    return result[0]["generated_text"]
+    
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7,
+        max_tokens=450
+    )
+    
+    return response.choices[0].message.content
 
 
 def generate_social_media_posts(destination):
     prompt = f"Create 5 Instagram captions with hashtags for promoting {destination}."
-    result = generator(prompt, max_length=200)
-    return result[0]["generated_text"]
+    
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.8,
+        max_tokens=300
+    )
+    
+    return response.choices[0].message.content
