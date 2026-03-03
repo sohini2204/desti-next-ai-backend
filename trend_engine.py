@@ -1,13 +1,27 @@
+from openai import OpenAI
+import os
 import pandas as pd
-from sklearn.cluster import KMeans
-from embedding_engine import generate_embeddings
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def detect_topics():
     df = pd.read_csv("data/CLEAN_Source_Country.csv")
 
-    embeddings = generate_embeddings(df["review"].tolist())
+    reviews = df["review"].tolist()
 
-    kmeans = KMeans(n_clusters=5, random_state=42)
-    df["topic"] = kmeans.fit_predict(embeddings)
+    prompt = f"""
+    Group the following travel reviews into 5 major themes.
+    Return output as:
+    Review: <text>
+    Topic: <theme name>
 
-    return df[["review", "topic"]]
+    Reviews:
+    {reviews[:20]}
+    """
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response.choices[0].message.content
