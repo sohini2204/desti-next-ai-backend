@@ -1,19 +1,30 @@
-from openai import OpenAI
-import os
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+import numpy as np
+from scipy.spatial.distance import cdist
+from embedding_engine import generate_embeddings
+from data_loader import load_destination_data
 
 def semantic_search(query, k=5):
+    """
+    Perform semantic search over the destinations dataset
+    using HuggingFace embeddings and cosine similarity.
 
-    prompt = f"""
-    A user searched for: {query}.
-    Suggest {k} relevant travel destinations with state and category.
-    Return as a clear list.
+    Returns top-k most similar destinations.
     """
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}]
-    )
+    # Load dataset
+    df = load_destination_data()
 
-    return response.choices[0].message.content
+    # Compute embeddings for all destinations
+    doc_embeddings = generate_embeddings(df["text_data"].tolist())
+
+    # Compute embedding for the query
+    query_embedding = generate_embeddings([query])[0]
+
+    # Cosine similarity
+    similarities = 1 - cdist([query_embedding], doc_embeddings, metric="cosine")[0]
+
+    # Add similarity scores
+    df["similarity"] = similarities
+
+    # Return top-k results
+    return df.sort_values("similarity", ascending=False).head(k)
