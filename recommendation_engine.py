@@ -1,19 +1,18 @@
-from openai import OpenAI
-import os
+from hf_client import query_hf_model
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# HuggingFace text generation model
+API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 
 def recommend_destination(user_interest):
-
-    prompt = f"""
-    A user is interested in: {user_interest}.
-    Recommend 5 travel destinations.
-    Return them as a simple list with destination name and category.
     """
-
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}]
+    Recommend 5 travel destinations based on user interest.
+    Returns them as a simple list with destination name and category.
+    """
+    prompt = (
+        f"A user is interested in: {user_interest}.\n"
+        "Recommend 5 travel destinations.\n"
+        "Return them as a clear, numbered list with destination name and category."
     )
 
-    return response.choices[0].message.content
+    result = query_hf_model(API_URL, {"inputs": prompt})
+    return result[0]["generated_text"]
