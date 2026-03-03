@@ -1,23 +1,19 @@
-import faiss
-import numpy as np
-from embedding_engine import generate_embeddings, load_destination_data
+from openai import OpenAI
+import os
 
-
-def build_faiss_index():
-    df = load_destination_data()
-    embeddings = generate_embeddings(df["text_data"].tolist())
-
-    dimension = embeddings.shape[1]
-    index = faiss.IndexFlatL2(dimension)
-    index.add(embeddings)
-
-    return df, index
-
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def semantic_search(query, k=5):
-    df, index = build_faiss_index()
 
-    query_vector = generate_embeddings([query])
-    distances, indices = index.search(query_vector, k)
+    prompt = f"""
+    A user searched for: {query}.
+    Suggest {k} relevant travel destinations with state and category.
+    Return as a clear list.
+    """
 
-    return df.iloc[indices[0]][["destination", "state", "category"]]
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response.choices[0].message.content
