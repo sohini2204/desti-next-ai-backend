@@ -2,8 +2,9 @@ fastapi
 uvicorn
 python-dotenv
 numpy
-pydantic
 pandas
+pydantic
 scikit-learn
 plotly
 requests
+scipy
