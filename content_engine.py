@@ -1,42 +1,30 @@
-from openai import OpenAI
-import os
+from hf_client import query_hf_model
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# HuggingFace text generation model
+API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 
 def generate_travel_story(destination):
+    """
+    Generate an engaging travel story about a destination.
+    """
     prompt = f"Write an engaging travel story about {destination} highlighting culture, food, and experiences."
-    
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.9,
-        max_tokens=400
-    )
-    
-    return response.choices[0].message.content
+    result = query_hf_model(API_URL, {"inputs": prompt})
+    return result[0]["generated_text"]
 
 
 def generate_promotional_content(destination):
+    """
+    Generate a tourism marketing blog for a destination.
+    """
     prompt = f"Write a tourism marketing blog for {destination} with attractions, best time to visit and tips."
-    
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7,
-        max_tokens=450
-    )
-    
-    return response.choices[0].message.content
+    result = query_hf_model(API_URL, {"inputs": prompt})
+    return result[0]["generated_text"]
 
 
 def generate_social_media_posts(destination):
+    """
+    Create 5 Instagram captions with hashtags for promoting a destination.
+    """
     prompt = f"Create 5 Instagram captions with hashtags for promoting {destination}."
-    
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.8,
-        max_tokens=300
-    )
-    
-    return response.choices[0].message.content
+    result = query_hf_model(API_URL, {"inputs": prompt})
+    return result[0]["generated_text"]
