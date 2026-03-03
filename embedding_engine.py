@@ -1,47 +1,27 @@
-import os
-import pandas as pd
 import numpy as np
-from openai import OpenAI
+from hf_client import query_hf_model
 
-# ==========================================
-# OpenAI Client
-# ==========================================
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# HuggingFace Embedding Model
+API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
 
 
 # ==========================================
-# Generate Embeddings (OpenAI)
+# Generate Embeddings (HuggingFace)
 # ==========================================
 def generate_embeddings(text_list):
     """
-    Generate embeddings using OpenAI API.
+    Generate embeddings using HuggingFace Inference API.
     """
-    response = client.embeddings.create(
-        model="text-embedding-3-small",
-        input=text_list
-    )
 
-    embeddings = [item.embedding for item in response.data]
-    return np.array(embeddings).astype("float32")
+    embeddings = []
 
+    for text in text_list:
+        result = query_hf_model(API_URL, {"inputs": text})
 
-# ==========================================
-# Load Destination Dataset
-# ==========================================
-def load_destination_data():
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    DATA_PATH = os.path.join(BASE_DIR, "data", "CLEAN_Destinations.csv")
+        # HF returns a list of floats
+        if isinstance(result, list):
+            embeddings.append(result)
+        else:
+            raise ValueError("Unexpected embedding response format from HF API")
 
-    if not os.path.exists(DATA_PATH):
-        raise FileNotFoundError(f"Dataset not found at {DATA_PATH}")
-
-    df = pd.read_csv(DATA_PATH)
-
-    # Create combined text field
-    df["text_data"] = (
-        df["destination"].astype(str) + " " +
-        df["state"].astype(str) + " " +
-        df["category"].astype(str)
-    )
-
-    return df
+    return np.array(embeddings, dtype="float32")
