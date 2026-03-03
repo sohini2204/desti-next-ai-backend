@@ -1,22 +1,27 @@
 import os
 import pandas as pd
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from openai import OpenAI
 
 # ==========================================
-# Load SBERT Model (Loaded Once Globally)
+# OpenAI Client
 # ==========================================
-model = SentenceTransformer("all-MiniLM-L6-v2")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 # ==========================================
-# Generate Embeddings
+# Generate Embeddings (OpenAI)
 # ==========================================
 def generate_embeddings(text_list):
     """
-    Generate embeddings for a list of text inputs.
+    Generate embeddings using OpenAI API.
     """
-    embeddings = model.encode(text_list)
+    response = client.embeddings.create(
+        model="text-embedding-3-small",
+        input=text_list
+    )
+
+    embeddings = [item.embedding for item in response.data]
     return np.array(embeddings).astype("float32")
 
 
