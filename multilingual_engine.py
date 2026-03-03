@@ -1,22 +1,11 @@
-import os
-from openai import OpenAI
+from hf_client import query_hf_model
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# HuggingFace translation model
+API_URL = "https://api-inference.huggingface.co/models/Helsinki-NLP/opus-mt-en-hi"
 
 def translate_text(text):
     """
-    Translate English text to Hindi using OpenAI.
+    Translate English text to Hindi using HF model.
     """
-
-    prompt = f"Translate the following English text to Hindi:\n\n{text}"
-
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.3,
-        max_tokens=500
-    )
-
-    return response.choices[0].message.content.strip()
+    result = query_hf_model(API_URL, {"inputs": text})
+    return result[0]["translation_text"]
