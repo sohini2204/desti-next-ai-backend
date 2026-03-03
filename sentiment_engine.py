@@ -1,7 +1,22 @@
-from transformers import pipeline
+from openai import OpenAI
+import os
 
-sentiment_model = pipeline("sentiment-analysis")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def analyze_sentiment(text):
-    result = sentiment_model(text)
-    return result[0]
+
+    prompt = f"""
+    Analyze the sentiment of this travel review.
+    Classify as Positive, Negative, or Neutral.
+    Also give a short explanation.
+
+    Review:
+    {text}
+    """
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response.choices[0].message.content
