@@ -14,16 +14,19 @@ from rag_engine import rag_chatbot
 from multilingual_engine import translate_text
 from dashboard import revenue_chart, seasonal_chart
 
-app = FastAPI()
+app = FastAPI(title="Desti Next AI Backend")
 
 # =============================
 # CORS CONFIGURATION
 # =============================
+origins = [
+    "https://desti-next-ai.vercel.app",  # production frontend
+    "http://localhost:3000",             # local frontend for testing
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://desti-next-ai.vercel.app",  # your frontend URL
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -55,7 +58,6 @@ def social(data: TextRequest):
 
 @app.post("/recommend")
 def recommend(data: InterestRequest):
-    # HF version returns string directly
     result = recommend_destination(data.interest)
     return {"result": result}
 
@@ -76,3 +78,9 @@ def chat(data: TextRequest):
 def translate(data: TextRequest):
     return {"result": translate_text(data.text)}
 
+# =============================
+# Optional: Root Health Check
+# =============================
+@app.get("/")
+def root():
+    return {"status": "Backend is running!"}
