@@ -121,6 +121,7 @@ destinationInput.addEventListener('keypress', (e) => {
 });
 
 async function generateTravelStory() {
+    console.log("Button Clicked");
     const userInput = destinationInput.value.trim();
     const selectedFeature = featureSelect.value;
 
