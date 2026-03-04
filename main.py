@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import traceback
 
 from content_engine import (
     generate_travel_story,
@@ -42,41 +43,54 @@ class InterestRequest(BaseModel):
     interest: str
 
 # =============================
+# Helper function for safe endpoint execution
+# =============================
+def safe_execute(func, *args, **kwargs):
+    try:
+        return {"result": func(*args, **kwargs)}
+    except Exception as e:
+        print(f"Error in {func.__name__}:", str(e))
+        traceback.print_exc()
+        return {"error": "Internal server error"}
+
+# =============================
 # API Endpoints
 # =============================
 @app.post("/generate-story")
 def story(data: TextRequest):
-    return {"result": generate_travel_story(data.text)}
+    return safe_execute(generate_travel_story, data.text)
 
 @app.post("/generate-promo")
 def promo(data: TextRequest):
-    return {"result": generate_promotional_content(data.text)}
+    return safe_execute(generate_promotional_content, data.text)
 
 @app.post("/generate-social")
 def social(data: TextRequest):
-    return {"result": generate_social_media_posts(data.text)}
+    return safe_execute(generate_social_media_posts, data.text)
 
 @app.post("/recommend")
 def recommend(data: InterestRequest):
-    result = recommend_destination(data.interest)
-    return {"result": result}
+    return safe_execute(recommend_destination, data.interest)
 
 @app.post("/search")
 def search(data: TextRequest):
-    result = semantic_search(data.text)
-    return {"result": result.to_dict(orient="records")}
+    result = safe_execute(semantic_search, data.text)
+    # If result contains dataframe, convert to records
+    if "result" in result and hasattr(result["result"], "to_dict"):
+        result["result"] = result["result"].to_dict(orient="records")
+    return result
 
 @app.post("/sentiment")
 def sentiment(data: TextRequest):
-    return {"result": analyze_sentiment(data.text)}
+    return safe_execute(analyze_sentiment, data.text)
 
 @app.post("/chat")
 def chat(data: TextRequest):
-    return {"result": rag_chatbot(data.text)}
+    return safe_execute(rag_chatbot, data.text)
 
 @app.post("/translate")
 def translate(data: TextRequest):
-    return {"result": translate_text(data.text)}
+    return safe_execute(translate_text, data.text)
 
 # =============================
 # Optional: Root Health Check
