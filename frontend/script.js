@@ -56,6 +56,8 @@ window.addEventListener('scroll', () => {
 const destinationInput = document.getElementById('destinationInput');
 const generateBtn = document.getElementById('generateBtn');
 const demoOutput = document.getElementById('demoOutput');
+const featureSelect = document.getElementById('featureSelect');
+const BASE_URL = "https://desti-next-ai-backend.onrender.com";
 
 // Travel story templates
 const storyTemplates = [
@@ -118,29 +120,47 @@ destinationInput.addEventListener('keypress', (e) => {
     }
 });
 
-function generateTravelStory() {
-    const destination = destinationInput.value.trim();
-    
-    if (!destination) {
-        alert('Please enter a destination!');
+async function generateTravelStory() {
+    const userInput = destinationInput.value.trim();
+    const selectedFeature = featureSelect.value;
+
+    if (!userInput) {
+        alert('Please enter something!');
         return;
     }
-    
-    // Show loading state
+
     generateBtn.classList.add('loading');
     generateBtn.disabled = true;
-    
-    // Simulate AI processing
-    setTimeout(() => {
-        const story = createStoryOutput(destination);
-        displayStory(story);
-        
-        // Remove loading state
-        generateBtn.classList.remove('loading');
-        generateBtn.disabled = false;
-    }, 2000);
-}
 
+    let payload = {};
+
+    if (selectedFeature === "recommend") {
+        payload = { interest: userInput };
+    } else {
+        payload = { text: userInput };
+    }
+
+    try {
+        const response = await fetch(`${BASE_URL}/${selectedFeature}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+
+        displayBackendResult(selectedFeature, data.result);
+
+    } catch (error) {
+        console.error("Backend Error:", error);
+        alert("Backend connection failed. Check console.");
+    }
+
+    generateBtn.classList.remove('loading');
+    generateBtn.disabled = false;
+}
 function createStoryOutput(destination) {
     // Randomly select templates
     const template = storyTemplates[Math.floor(Math.random() * storyTemplates.length)];
@@ -193,6 +213,32 @@ function displayStory(story) {
     demoOutput.innerHTML = outputHTML;
     
     // Scroll to output
+    demoOutput.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function displayBackendResult(feature, result) {
+
+    let formatted = "";
+
+    if (Array.isArray(result)) {
+        formatted = `
+            <ul>
+                ${result.map(item => `<li>${JSON.stringify(item)}</li>`).join("")}
+            </ul>
+        `;
+    } else {
+        formatted = `<pre style="white-space: pre-wrap;">${result}</pre>`;
+    }
+
+    const outputHTML = `
+        <div class="output-card">
+            <div class="output-section">
+                <h3>✨ ${feature.replace("-", " ").toUpperCase()}</h3>
+                ${formatted}
+            </div>
+        </div>
+    `;
+
+    demoOutput.innerHTML = outputHTML;
     demoOutput.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
