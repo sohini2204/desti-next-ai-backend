@@ -929,3 +929,83 @@ body {
         padding: var(--spacing-md);
     }
 }
+
+
+/* DASHBOARD SECTION */
+
+.dashboard-section{
+    padding:100px 0;
+    background:#f9fafb;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#6b7280;
+    margin-bottom:50px;
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
+
+.chart-card{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.chart-card h3{
+    margin-bottom:15px;
+}
+
+.chart-box{
+    width:100%;
+    height:420px;
+}
+/* Analytics Section */
+
+.analytics-section{
+    padding:100px 0;
+    background:#f9fafb;
+}
+
+.analytics-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+/* Card style same vibe as idea cards */
+
+.analytics-card{
+    background:#eaf4fb;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Gradient header */
+
+.analytics-header{
+    background:linear-gradient(90deg,#1fa2ff,#12d8fa,#fbb03b);
+    color:white;
+    padding:14px 20px;
+    font-weight:600;
+}
+
+/* Chart area */
+
+.chart-box{
+    height:380px;
+    padding:10px;
+}

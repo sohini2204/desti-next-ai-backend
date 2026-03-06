@@ -9,6 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Powered Destination Marketing Platform - Discover destinations through smart stories, personalized travel ideas, and AI-powered insights.">
+    <title>DestiNext AI - Smart Destination Marketing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -157,24 +172,30 @@
             <div class="demo-container">
                 <div class="demo-input-section">
                     <div class="input-group">
-                        <label for="destinationInput">Enter a Destination</label>
-                        <input type="text" id="destinationInput" placeholder="e.g., Santorini, Greece" class="demo-input">
+                        <label for="destinationInput">Enter a Tourist Spot</label>
+                        <input 
+    type="text" 
+    id="destinationInput" 
+    placeholder="e.g., Taj Mahal, Hawa Mahal"
+    list="destinationList"
+/>
+
+<datalist id="destinationList"></datalist>
                     </div>
                     <div class="input-group">
                         <label for="featureSelect">Select Feature</label>
                         <select id="featureSelect" class="demo-input">
                         <option value="generate-story">Generate Travel Story</option>
-                        <option value="generate-promo">Generate Promotional Content</option>
-                        <option value="generate-social">Generate Social Media Post</option>
-                        <option value="recommend">Recommend Destination</option>
-                        <option value="search">Semantic Search</option>
-                        <option value="sentiment">Sentiment Analysis</option>
+                        <option value="generate-promo">Generate Promotional / Social Media Content</option>
+                        <option value="recommend">Recommended Destinations</option>
                         <option value="chat">AI Chatbot</option>
-                        <option value="translate">Translate Text</option>
+                        <option value="reviews">Show Tourist Reviews</option>
+
+                        
                     </select>
                   </div>
                     <button id="generateBtn" class="btn btn-primary btn-large">
-                        <span class="btn-text">Generate Travel Story</span>
+                        <span class="btn-text">Generate</span>
                         <span class="btn-loader"></span>
                     </button>
                 </div>
@@ -188,6 +209,47 @@
         </div>
     </section>
 
+
+
+    <nav>...</nav>
+
+<section id="home">...</section>
+
+<section id="about">...</section>
+
+<section id="features">...</section>
+
+<section id="demo">...</section>
+
+    <!-- Dashboard Section -->
+<section id="dashboard" class="analytics-section">
+  <div class="container">
+
+    <h2 class="section-title">Tourism Analytics Dashboard</h2>
+    <p class="section-subtitle">
+      Real-time insights into destination performance and seasonal trends.
+    </p>
+
+    <div class="analytics-grid">
+
+      <div class="analytics-card">
+        <div class="analytics-header">
+          📊 State Revenue Performance
+        </div>
+        <div class="chart-box" id="revenue-chart"></div>
+      </div>
+
+      <div class="analytics-card">
+        <div class="analytics-header">
+          📈 Seasonal Visitor Trends
+        </div>
+        <div class="chart-box" id="seasonal-chart"></div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     <!-- Social Media Ideas Section -->
     <section id="social" class="social-ideas">
         <div class="container">
@@ -204,10 +266,13 @@
                     </div>
                     <div class="social-content">
                         <h4>Caption Idea</h4>
-                        <p>"Lost in the azure waters of Santorini 🌊✨ Where every sunset paints a new masterpiece. #TravelGoals #SantoriniMagic"</p>
+                        <p>""Lost in the timeless beauty of the Taj Mahal 🤍✨ 
+Where history, architecture, and romance come together in one breathtaking view. 
+""</p>
                         <div class="hashtags">
-                            <span>#Santorini</span>
-                            <span>#Greece</span>
+                            <span>#IncredibleIndia</span>
+                            <span> #TajMahal</span>
+                             <span>#TravelIndia</span> 
                             <span>#TravelPhotography</span>
                             <span>#Wanderlust</span>
                         </div>
@@ -220,11 +285,11 @@
                     </div>
                     <div class="social-content">
                         <h4>Content Concept</h4>
-                        <p>"Day in the life: Exploring hidden gems of Bali"</p>
+                        <p>"Day in the life: Exploring Jaipur – The Pink City"</p>
                         <ul class="content-list">
-                            <li>Morning: Sunrise at rice terraces</li>
-                            <li>Afternoon: Traditional temple visit</li>
-                            <li>Evening: Beach sunset & local cuisine</li>
+                            <li>Morning: Sunrise at Amber Fort</li>
+                            <li>Afternoon: Explore Hawa Mahal & local bazaars </li>
+                            <li>Evening: Rooftop dinner overlooking the city lights</li>
                         </ul>
                     </div>
                 </div>
@@ -235,8 +300,10 @@
                     </div>
                     <div class="social-content">
                         <h4>Seasonal Campaign</h4>
-                        <p>"Summer Escape Series: 7 Days, 7 Destinations"</p>
-                        <p class="campaign-desc">Weekly spotlight on trending summer destinations with user-generated content and exclusive travel tips.</p>
+                        <p>"Incredible India Explorer Series"</p>
+                        <p class="campaign-desc">Weekly spotlight on India's most iconic destinations 
+like Kerala backwaters, Ladakh mountains, Goa beaches, 
+and Rajasthan palaces with travel tips and hidden gems.</p>
                     </div>
                 </div>
             </div>
@@ -319,5 +386,28 @@
     </footer>
 
     <script src="script.js"></script>
+    
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+fetch("http://127.0.0.1:8000/dashboard/revenue")
+.then(res => res.json())
+.then(fig => {
+    Plotly.newPlot("revenue-chart", fig.data, fig.layout, {responsive:true});
+});
+
+fetch("http://127.0.0.1:8000/dashboard/seasonal")
+.then(res => res.json())
+.then(fig => {
+    Plotly.newPlot("seasonal-chart", fig.data, fig.layout, {responsive:true});
+});
+
+});
+
+</script>
 </body>
 </html>
+

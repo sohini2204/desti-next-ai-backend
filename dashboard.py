@@ -1,6 +1,7 @@
 import plotly.express as px
 import pandas as pd
 from pathlib import Path
+import json
 
 # =========================================================
 # Base Directory Setup (Professional Method)
@@ -69,7 +70,7 @@ def revenue_chart():
 
     fig.update_traces(textposition="outside")
 
-    return fig
+    return json.loads(fig.to_json())
 
 
 # =========================================================
@@ -96,8 +97,7 @@ def seasonal_chart():
         xaxis_title="Month",
         yaxis_title="Hotel Occupancy (%)"
     )
-
-    return fig
+    return json.loads(fig.to_json())
 
 
 # =========================================================

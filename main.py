@@ -6,7 +6,8 @@ import traceback
 from content_engine import (
     generate_travel_story,
     generate_promotional_content,
-    generate_social_media_posts
+    generate_social_media_posts,
+    generate_reviews
 )
 from recommendation_engine import recommend_destination
 from sentiment_engine import analyze_sentiment
@@ -21,13 +22,12 @@ app = FastAPI(title="Desti Next AI Backend")
 # CORS CONFIGURATION
 # =============================
 origins = [
-    "https://desti-next-ai.vercel.app",  # production frontend
-    "http://localhost:3000",             # local frontend for testing
+    "*"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -91,6 +91,33 @@ def chat(data: TextRequest):
 @app.post("/translate")
 def translate(data: TextRequest):
     return safe_execute(translate_text, data.text)
+
+
+@app.post("/reviews")
+def reviews(data: TextRequest):
+    return safe_execute(generate_reviews, data.text)
+
+
+import pandas as pd
+
+destinations_df = pd.read_csv("data/CLEAN_Destinations.csv")
+
+@app.get("/destinations")
+def get_destinations():
+    places = destinations_df["destination"].dropna().unique().tolist()
+    return {"destinations": places}
+
+@app.get("/dashboard/revenue")
+def get_revenue_chart():
+  fig = revenue_chart()
+  return fig
+
+
+@app.get("/dashboard/seasonal")
+def get_seasonal_chart():
+    fig = seasonal_chart()
+    return fig
+
 
 # =============================
 # Optional: Root Health Check

@@ -57,7 +57,7 @@ const destinationInput = document.getElementById('destinationInput');
 const generateBtn = document.getElementById('generateBtn');
 const demoOutput = document.getElementById('demoOutput');
 const featureSelect = document.getElementById('featureSelect');
-const BASE_URL = "https://desti-next-ai-backend.onrender.com";
+const BASE_URL = "http://127.0.0.1:8000";
 
 // Travel story templates
 const storyTemplates = [
@@ -218,16 +218,24 @@ function displayStory(story) {
 }
 function displayBackendResult(feature, result) {
 
+    // Handle empty or undefined responses
+    if (!result) {
+        result = "No response received from backend.";
+    }
+
     let formatted = "";
 
+    // If backend returns a list
     if (Array.isArray(result)) {
         formatted = `
             <ul>
-                ${result.map(item => `<li>${JSON.stringify(item)}</li>`).join("")}
+                ${result.map(item => `<li>${item}</li>`).join("")}
             </ul>
         `;
-    } else {
-        formatted = `<pre style="white-space: pre-wrap;">${result}</pre>`;
+    } 
+    // If backend returns text
+    else {
+        formatted = `<pre style="white-space: pre-wrap;">${result}</div>`;
     }
 
     const outputHTML = `
@@ -344,3 +352,48 @@ document.querySelectorAll('.btn').forEach(btn => {
 // ========================================
 console.log('%c🌍 Welcome to DestiNext AI! ', 'background: linear-gradient(135deg, #0ea5e9, #14b8a6); color: white; font-size: 20px; padding: 10px; border-radius: 5px;');
 console.log('%cExplore the power of AI-driven destination marketing!', 'color: #0ea5e9; font-size: 14px;');
+
+
+
+
+
+async function loadDestinations() {
+
+    const response = await fetch("http://127.0.0.1:8000/destinations");
+    const data = await response.json();
+
+    const datalist = document.getElementById("destinationList");
+
+    data.destinations.forEach(place => {
+
+        const option = document.createElement("option");
+        option.value = place;
+
+        datalist.appendChild(option);
+
+    });
+
+}
+
+async function loadDashboard() {
+
+    const revenueRes = await fetch("http://127.0.0.1:8000/dashboard/revenue");
+    const revenueFig = await revenueRes.json();
+
+    Plotly.newPlot(
+        "revenueChart",
+        revenueFig.data,
+        revenueFig.layout
+    );
+
+    const seasonalRes = await fetch("http://127.0.0.1:8000/dashboard/seasonal");
+    const seasonalFig = await seasonalRes.json();
+
+    Plotly.newPlot(
+        "seasonalChart",
+        seasonalFig.data,
+        seasonalFig.layout
+    );
+}
+
+loadDashboard();
