@@ -84,9 +84,7 @@ def search(data: TextRequest):
 def sentiment(data: TextRequest):
     return safe_execute(analyze_sentiment, data.text)
 
-@app.post("/chat")
-def chat(data: TextRequest):
-    return safe_execute(rag_chatbot, data.text)
+
 
 @app.post("/translate")
 def translate(data: TextRequest):
@@ -125,3 +123,18 @@ def get_seasonal_chart():
 @app.get("/")
 def root():
     return {"status": "Backend is running!"}
+
+# =============================
+# Chatbot
+# =============================
+
+from rag_chatbot import chatbot_response
+
+@app.post("/chat")
+async def chat(data: dict):
+
+    user_message = data.get("message")
+
+    reply = chatbot_response(user_message)
+
+    return {"reply": reply}
