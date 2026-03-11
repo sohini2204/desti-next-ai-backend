@@ -18,6 +18,10 @@ def get_youtube_shorts(place):
     query = place.replace(" ", "+") + "+travel+shorts"
     return f"https://www.youtube.com/results?search_query={query}&sp=EgIYAQ%253D%253D"
 
+
+# ================================
+# RAG CHATBOT
+# ================================
 def rag_chatbot(query):
 
     place = query.strip().lower()
@@ -55,7 +59,7 @@ def rag_chatbot(query):
 
     ticket_link = f"https://www.google.com/search?q={destination.replace(' ','+')}+entry+ticket"
 
-    return f"""
+    response = f"""
 <h3>🧭 Travel Guide for {destination}</h3>
 
 📍 <b>Nearby Attractions</b><br>
@@ -95,17 +99,42 @@ def rag_chatbot(query):
 • Weekdays are less crowded
 """
 
-    # SOCIAL MEDIA / PROMOTIONAL CONTENT
-    if feature == "generate-promo":
+    return response
 
-        insta = get_instagram_links(query)
-        yt_videos = get_youtube_videos(query)
-        yt_shorts = get_youtube_shorts(query)
 
-        response = f"""
-<h3>📱 Social Media Content for {row['destination']}</h3>
+# ================================
+# SIMPLE AI RESPONSE (for multilingual pipeline)
+# ================================
+def generate_ai_response(query):
 
-<p>Use the links below to explore travel content and promote this destination.</p>
+    place = query.strip().lower()
+
+    match = destinations[
+        destinations["destination"].str.lower() == place
+    ]
+
+    if match.empty:
+        return f"Sorry, {query} is not present in the tourism dataset."
+
+    row = match.iloc[0]
+
+    destination = row["destination"]
+    state = row["state"]
+
+    return f"Top tourist destination: {destination} located in {state}. It is a popular travel spot with scenic views and local attractions."
+
+
+# ================================
+# SOCIAL MEDIA PROMOTION
+# ================================
+def generate_promo_links(place):
+
+    insta = get_instagram_links(place)
+    yt_videos = get_youtube_videos(place)
+    yt_shorts = get_youtube_shorts(place)
+
+    return f"""
+<h3>📱 Social Media Content for {place}</h3>
 
 📸 <b>Instagram Travel Posts</b><br>
 <a href="{insta}" target="_blank">View Instagram Posts</a>
@@ -120,5 +149,3 @@ def rag_chatbot(query):
 🎬 <b>YouTube Shorts</b><br>
 <a href="{yt_shorts}" target="_blank">Watch YouTube Shorts</a>
 """
-
-        return response
