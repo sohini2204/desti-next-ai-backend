@@ -381,7 +381,7 @@ async function loadDashboard() {
     const revenueFig = await revenueRes.json();
 
     Plotly.newPlot(
-        "revenueChart",
+        "revenuechart",
         revenueFig.data,
         revenueFig.layout
     );
@@ -396,4 +396,71 @@ async function loadDashboard() {
     );
 }
 
-loadDashboard();
+async function sendMessage() {
+
+    const input = document.getElementById("user-input");
+    const chatBox = document.getElementById("chat-box");
+
+    const message = input.value.trim();
+    if (!message) return;
+
+    // Show user message
+    chatBox.innerHTML += `<div><b>You:</b> ${message}</div>`;
+    input.value = "";
+
+    // Show typing indicator
+    chatBox.innerHTML += `<div id="typing"><b>DestiNext Guide:</b> typing...</div>`;
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    // Small delay so browser renders typing
+    await new Promise(resolve => setTimeout(resolve, 0));
+
+    const response = await fetch("http://127.0.0.1:8000/chat", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: message })
+    });
+
+    const data = await response.json();
+
+    // Remove typing indicator
+    const typing = document.getElementById("typing");
+    if (typing) typing.remove();
+
+    // Show AI response
+    chatBox.innerHTML += `<div><b>DestiNext Guide:</b> ${data.reply}</div>`;
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+
+function toggleChat(){
+
+    const popup = document.getElementById("chat-popup");
+
+    if(popup.style.display === "flex"){
+        popup.style.display = "none";
+    }else{
+        popup.style.display = "flex";
+    }
+
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    loadDestinations();
+    loadDashboard();
+
+    const input = document.getElementById("user-input");
+
+    input.addEventListener("keydown", function(event){
+        if(event.key === "Enter"){
+            event.preventDefault();
+            sendMessage();
+        }
+    });
+
+});
+

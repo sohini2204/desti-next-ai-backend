@@ -14,9 +14,10 @@ from content_engine import (
 from recommendation_engine import recommend_destination
 from sentiment_engine import analyze_sentiment
 from semantic_search_engine import semantic_search
-from rag_engine import rag_chatbot, generate_ai_response
+from rag_engine import generate_ai_response
 
-from multilingual_engine import multilingual_pipeline
+
+from multilingual_engine import multilingual_pipeline, translate_text
 from dashboard import revenue_chart, seasonal_chart
 
 app = FastAPI(title="Desti Next AI Backend")
@@ -109,12 +110,10 @@ def sentiment(data: TextRequest):
     return safe_execute(analyze_sentiment, data.text)
 
 
-# =============================
-# Multilingual Chat Endpoint
-# =============================
-@app.post("/chat")
-def chat(data: TextRequest):
-    return safe_execute(get_response, data.text)
+
+@app.post("/translate")
+def translate(data: TextRequest):
+    return safe_execute(translate_text, data.text)
 
 
 @app.post("/reviews")
@@ -159,3 +158,18 @@ def get_seasonal_chart():
 @app.get("/")
 def root():
     return {"status": "Backend is running!"}
+
+# =============================
+# Chatbot
+# =============================
+
+from rag_chatbot import chatbot_response
+
+@app.post("/chat")
+async def chat(data: dict):
+
+    user_message = data.get("message")
+
+    reply = chatbot_response(user_message)
+
+    return {"reply": reply}
