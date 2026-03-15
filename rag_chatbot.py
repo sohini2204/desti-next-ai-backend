@@ -2,21 +2,24 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 import faiss
 import ollama
+import numpy as np
+
+
+from hf_client import query_hf_model
 
 # Load dataset
 df = pd.read_csv("data/CLEAN_Destinations.csv")
-destinations = df["destination"].dropna().tolist()
+destinations = df["destination"].fillna("").tolist()
 
 # Load embedding model ONLY ONCE
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 # Create embeddings once
 embeddings = model.encode(destinations)
-
+#create faiss index
 dimension = embeddings.shape[1]
 index = faiss.IndexFlatL2(dimension)
-index.add(embeddings)
-
+index.add(np.array(embeddings))
 
 def chatbot_response(query):
 
@@ -39,12 +42,20 @@ Relevant destinations:
 User question:
 {query}
 
-Answer briefly in 2-3 sentences.
+Give a helpful travel recommendation.
 """
 
+    # Call Ollama LLM
     response = ollama.chat(
-        model="phi3",
-        messages=[{"role": "user", "content": prompt}]
+        model="llama3",
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
     )
 
-    return response.message.content
+    return response["message"]["content"]
+
+

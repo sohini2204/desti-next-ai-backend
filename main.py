@@ -15,17 +15,17 @@ from recommendation_engine import recommend_destination
 from sentiment_engine import analyze_sentiment
 from semantic_search_engine import semantic_search
 from rag_engine import generate_ai_response
+from rag_chatbot import chatbot_response
 
-
-from multilingual_engine import multilingual_pipeline, translate_text
 from dashboard import revenue_chart, seasonal_chart
 
 app = FastAPI(title="Desti Next AI Backend")
 
 # =============================
+
 # CORS CONFIGURATION
+
 # =============================
-origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -36,107 +36,110 @@ app.add_middleware(
 )
 
 # =============================
+
 # Request Models
+
 # =============================
+
 class TextRequest(BaseModel):
     text: str
 
 class InterestRequest(BaseModel):
     interest: str
 
-
 # =============================
-# Multilingual Response Function
-# =============================
-def get_response(user_input):
 
-    response = multilingual_pipeline(
-        user_input,
-        generate_ai_response
-    )
-
-    return response
-
-
-# =============================
 # Helper function
+
 # =============================
+
 def safe_execute(func, *args, **kwargs):
     try:
         return {"result": func(*args, **kwargs)}
     except Exception as e:
-        print(f"Error in {func.__name__}:", str(e))
+        print(f"Error in {func.__name__}: {str(e)}")
         traceback.print_exc()
         return {"error": "Internal server error"}
 
-
 # =============================
-# API Endpoints
+
+# Content Generation APIs
+
 # =============================
 
 @app.post("/generate-story")
 def story(data: TextRequest):
     return safe_execute(generate_travel_story, data.text)
 
-
 @app.post("/generate-promo")
 def promo(data: TextRequest):
     return safe_execute(generate_promotional_content, data.text)
-
 
 @app.post("/generate-social")
 def social(data: TextRequest):
     return safe_execute(generate_social_media_posts, data.text)
 
+# =============================
+
+# Multilingual Recommendation
+
+# =============================
 
 @app.post("/recommend")
 def recommend(data: InterestRequest):
-    return safe_execute(recommend_destination, data.interest)
+    response = recommend_destination(data.interest)
+    return {"result": response}
+# =============================
 
+# Multilingual Semantic Search
+
+# =============================
 
 @app.post("/search")
 def search(data: TextRequest):
+    response = semantic_search(data.text)
 
-    result = safe_execute(semantic_search, data.text)
+    if hasattr(response, "to_dict"):
+        response = response.to_dict(orient="records")
 
-    if "result" in result and hasattr(result["result"], "to_dict"):
-        result["result"] = result["result"].to_dict(orient="records")
+    return {"result": response}
+# =============================
 
-    return result
+# Multilingual Sentiment
 
+# =============================
 
 @app.post("/sentiment")
 def sentiment(data: TextRequest):
-    return safe_execute(analyze_sentiment, data.text)
+    response = analyze_sentiment(data.text)
+    return {"result": response}
+# =============================
 
+# Reviews
 
-
-@app.post("/translate")
-def translate(data: TextRequest):
-    return safe_execute(translate_text, data.text)
-
+# =============================
 
 @app.post("/reviews")
 def reviews(data: TextRequest):
     return safe_execute(generate_reviews, data.text)
 
-
 # =============================
+
 # Destination List
+
 # =============================
 
 destinations_df = pd.read_csv("data/CLEAN_Destinations.csv")
 
 @app.get("/destinations")
 def get_destinations():
-
     places = destinations_df["destination"].dropna().unique().tolist()
-
     return {"destinations": places}
 
-
 # =============================
+
 # Dashboard APIs
+
 # =============================
 
 @app.get("/dashboard/revenue")
@@ -144,15 +147,15 @@ def get_revenue_chart():
     fig = revenue_chart()
     return fig
 
-
 @app.get("/dashboard/seasonal")
 def get_seasonal_chart():
     fig = seasonal_chart()
     return fig
 
-
 # =============================
+
 # Root Health Check
+
 # =============================
 
 @app.get("/")
@@ -160,10 +163,10 @@ def root():
     return {"status": "Backend is running!"}
 
 # =============================
-# Chatbot
-# =============================
 
-from rag_chatbot import chatbot_response
+# Multilingual Chatbot
+
+# =============================
 
 @app.post("/chat")
 async def chat(data: dict):

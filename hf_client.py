@@ -8,10 +8,13 @@ load_dotenv()
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 
+if not HF_TOKEN:
+    raise Exception("HF_TOKEN not found. Please add it to .env file")
 print("HF TOKEN LOADED:", HF_TOKEN)   # debugging
 
 headers = {
-    "Authorization": f"Bearer {HF_TOKEN}"
+    "Authorization": f"Bearer {HF_TOKEN}",
+    "Content-Type": "application/json"
 }
 
 def query_hf_model(api_url, payload, retries=3):
