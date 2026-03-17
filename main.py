@@ -17,11 +17,8 @@ from semantic_search_engine import semantic_search
 from rag_engine import generate_ai_response
 from rag_chatbot import chatbot_response
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> d5f8328887b4168d7715a6c6377cb656827b8928
 from dashboard import revenue_chart, seasonal_chart
 
 app = FastAPI(title="Desti Next AI Backend")
